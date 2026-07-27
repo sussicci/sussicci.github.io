@@ -14,7 +14,7 @@
 <!-- NAVIGATION -->
 <section id="navigation">
     <a href="index.html" class="logo-link">
-        <img id="logo" src="logo.jpg" alt="Logo">
+        <img id="logo" src="logo.png" alt="Logo">
     </a>
 
     <button id="hamburger" aria-label="Menü öffnen">
@@ -36,7 +36,7 @@
 </section>
 
 <!-- HERO -->
-<header id="hero" style="height: 28rem;">
+<header id="heroaktuelles" style="height: 28rem;">
     <div id="herocontent">
         <h1>Aktuelles</h1>
         <p id="slogan">
@@ -180,13 +180,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 const article = document.createElement("article");
 
-                article.className = "about-card";
+                article.className = "post-card";
 
                 article.innerHTML = `
-                    <div class="card-number">${formatDate(post.date)}</div>
+                    <div class="post-card-number">${formatDate(post.date)}</div>
                     <h3>${post.title}</h3>
                     ${renderContent(post.content)}
-                    <a class="card-btn" href="${post.link}">
+                    <a class="post-card-btn" href="${post.link}">
                         ${post.linkText}
                     </a>
                 `;
