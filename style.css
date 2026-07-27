@@ -1705,3 +1705,17 @@ footer {
     }
 
 }
+
+#aktuelles-main{
+    width:65%;
+    margin:6rem auto;
+}
+
+@media (max-width:768px){
+
+    #aktuelles-main{
+        width:92%;
+        margin:3rem auto;
+    }
+
+}
