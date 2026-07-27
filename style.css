@@ -195,6 +195,16 @@ a:hover {
     background-position: center;
     margin: 0;
 }
+
+#herokontakt {
+    height: 44rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("DSC_0634.JPEG"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+}
+
 /* Main */
 
 /* Letzte Update */
