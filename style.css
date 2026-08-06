@@ -1049,15 +1049,6 @@ footer {
         margin: 0 auto;
     }
 
-    #aktuelles {
-        flex-wrap: wrap;
-    }
-
-    .sliderbox {
-        width: 50%;
-        box-sizing: border-box;
-    }
-
     .footer-inner {
         grid-template-columns: 1fr 1fr;
     }
@@ -1160,14 +1151,6 @@ footer {
 
     .slider-btn {
         display: none;
-    }
-
-    #aktuelles {
-        flex-direction: column;
-    }
-
-    .sliderbox {
-        width: 100%;
     }
 
     .footer-inner {
