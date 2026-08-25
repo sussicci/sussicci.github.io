@@ -644,7 +644,7 @@ input[type="radio"] {
 }
 
 /* GRID */
-.unsere-arbeit {
+.arbeit-grid {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1272,7 +1272,7 @@ footer {
     }
 
     #ueber-uns,
-    .unsere-arbeit,
+    .arbeit-grid,
     .footer-inner,
     .frauen-wrapper,
     #unsere-frauen h2,
@@ -1422,7 +1422,7 @@ footer {
         justify-content: flex-start;
     }
 
-    .unsere-arbeit {
+    .arbeit-grid {
         width: 90%;
         padding: 0;
         grid-template-columns: 1fr;
