@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
 }
     
     function getItemsPerPage() {
-        const grid = document.querySelector(".unsere-arbeit");
+        const grid = document.querySelector(".arbeit-grid");
 
         const firstItem = grid.querySelector(".arbeit");
         if (!firstItem) return 6;
@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let filtered = getFilteredItems();
     filtered = sortItems(filtered);
 
-    const grid = document.querySelector(".unsere-arbeit");
+    const grid = document.querySelector(".arbeit-grid");
 
     filtered.forEach(item => {
         grid.appendChild(item);
