@@ -879,19 +879,91 @@ input[type="radio"] {
     scroll-margin-top: 12rem;
 }
 
-a h2 {
-margin-top: 0;
+/* =========================================
+   MODAL
+========================================= */
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.25s ease;
+    z-index: 5000;
 }
 
-a p {
-    font-weight: 600;
+.modal.active {
+    opacity: 1;
+    visibility: visible;
 }
 
-/* Footer */
+.modal-content {
+    background: white;
+    width: min(90%, 650px);
+    padding: 3rem;
+    border-radius: 24px;
+    position: relative;
+    animation: popup 0.25s ease;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    color: var(--heading);
+}
+
+.modal-content p {
+    line-height: 1.8;
+    color: gray;
+}
+
+#closeModal {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: none;
+    background: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #64748B;
+}
+
+#closeModal:hover {
+    color: var(--primary);
+}
+
+@keyframes popup {
+
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#modalImage {
+    width: 80%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 1rem auto;
+    display: block;
+}
+
+/* =========================
+   FOOTER
+========================= */
 
 footer {
     background-color: var(--text);
-    color: var(--background);
+    color: white;
     padding: 4rem 0 2rem 0;
 }
 
@@ -948,546 +1020,8 @@ footer {
     color: #94A3B8;
 }
 
-
-
-
-
-
-
-
-
 /* =========================================
-   TABLET
-========================================= */
-
-@media (max-width: 900px) {
-
-    .highlight-card {
-        grid-template-columns: 1fr;
-
-        text-align: center;
-
-        padding: 1.5rem;
-    }
-
-    .highlight-tag {
-        justify-self: center;
-    }
-
-    .highlight-button {
-        width: 100%;
-        box-sizing: border-box;
-    }
-}
-
-/* =========================================
-   MOBILE
-========================================= */
-
-@media (max-width: 600px) {
-
-    #highlight-aktuelles {
-        width: 92%;
-    }
-
-    .highlight-card {
-        padding: 1.25rem;
-
-        border-radius: 18px;
-
-        gap: 1.2rem;
-    }
-
-    .highlight-content h3 {
-        font-size: 1.05rem;
-    }
-
-    .highlight-meta,
-    .highlight-location {
-        font-size: 0.9rem;
-    }
-}
-/* MOBILE */
-
-@media (max-width: 900px) {
-
-    #überuns {
-        width: 90%;
-    }
-
-    .about-intro {
-        grid-template-columns: 1fr;
-    }
-
-    .about-cards {
-        grid-template-columns: 1fr;
-    }
-
-    .about-card:first-child {
-        min-height: auto;
-    }
-
-    .highlight-number {
-        font-size: 4rem;
-    }
-}
-
-/* =========================================
-   RESPONSIVE DESIGN
-========================================= */
-
-/* TABLET */
-@media (max-width: 1100px) {
-
-    h1 {
-        font-size: 4rem;
-    }
-
-    #herocontent {
-        width: 80%;
-    }
-
-    #überuns,
-    .unserearbeit,
-    .footer-inner,
-    .frauen-wrapper,
-    #unserefrauen h2,
-    #h2arbeit {
-        width: 90%;
-    }
-
-    .about-top {
-        grid-template-columns: 1fr;
-    }
-
-    .about-cards {
-        grid-template-columns: 1fr;
-    }
-
-    .frau {
-        grid-template-columns: 1fr;
-    }
-
-    .frau img {
-        height: 320px;
-    }
-
-    .highlight-line {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 1rem;
-        padding: 1.5rem;
-    }
-
-    .highlight-label {
-        height: auto;
-        padding: 0.7rem;
-    }
-
-    .highlight-button {
-        margin: 0 auto;
-    }
-
-    .footer-inner {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-
-    body {
-        overflow-x: hidden;
-    }
-
-    h1 {
-        font-size: 2.8rem;
-        line-height: 1.2;
-    }
-
-    h2 {
-        font-size: 1.8rem;
-    }
-
-    #navigation {
-        grid-template-columns: 1fr;
-        height: auto;
-        padding: 1rem;
-        gap: 1rem;
-    }
-
-    nav {
-        width: 100%;
-    }
-
-    #nav1 {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.5rem;
-    }
-
-    #navbutton {
-        justify-self: center;
-    }
-
-    #logo {
-        margin: 0 auto;
-    }
-
-    #hero {
-        height: auto;
-        padding: 5rem 0;
-    }
-
-    #herocontent {
-        width: 90%;
-        padding-top: 0;
-    }
-
-    #slogan {
-        font-size: 1rem;
-    }
-
-    .about-intro p {
-        font-size: 1rem;
-        line-height: 1.7;
-    }
-
-    .highlight-number {
-        font-size: 3rem;
-    }
-
-    .filter-controls {
-        width: 90%;
-        justify-content: flex-start;
-    }
-
-    .unserearbeit {
-        width: 90%;
-        padding: 0;
-        grid-template-columns: 1fr;
-    }
-
-    .arbeit {
-        width: 100%;
-    }
-
-    .content {
-        padding: 1rem;
-    }
-
-    .frau {
-        min-width: 100%;
-    }
-
-    .frau img {
-        height: 260px;
-    }
-
-    .text {
-        padding: 1.5rem;
-    }
-
-    .slider-btn {
-        display: none;
-    }
-
-    .footer-inner {
-        width: 90%;
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    footer {
-        padding: 3rem 0 2rem 0;
-    }
-}
-
-/* SMALL MOBILE */
-@media (max-width: 480px) {
-
-    h1 {
-        font-size: 2.2rem;
-    }
-
-    .highlight-button,
-    .hero-btn,
-    .card-btn {
-        width: 100%;
-        text-align: center;
-        box-sizing: border-box;
-    }
-
-    .filter-controls {
-        gap: 0.4rem;
-    }
-
-    .filter-controls label {
-        font-size: 0.9rem;
-        padding: 0.45rem 0.8rem;
-    }
-
-    .about-card {
-        padding: 1.5rem;
-    }
-
-    .highlight-line {
-        padding: 1rem;
-    }
-
-    .update-text h3 {
-        font-size: 0.95rem;
-    }
-
-    .update-text p {
-        font-size: 0.85rem;
-    }
-}
-
-@media (max-width: 1100px) {
-    .arbeit-intro {
-        width: 90%;
-        font-size: 1rem;
-        line-height: 1.7;
-    }
-}
-/* =========================================
-   DESKTOP NAV FIX
-========================================= */
-
-@media (min-width: 769px) {
-
-    #mobileNav {
-        display: flex;
-        align-items: center;
-        width: 100%;
-    }
-
-    #nav1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        flex: 1;
-        gap: 2rem;
-    }
-
-    #navbutton {
-        margin-left: auto;
-    }
-
-}
-/* =========================================
-   MOBILE NAVIGATION
-========================================= */
-
-@media (max-width: 768px) {
-
-    #navigation {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        padding: 1rem 5%;
-        height: auto;
-    }
-
-    #logo {
-        margin: 0;
-    }
-
-    #hamburger {
-        display: flex;
-    }
-
-    #mobileNav {
-        position: fixed;
-
-        top: 0;
-        right: -100%;
-
-        width: 100%;
-        height: 100vh;
-
-        background: var(--background);
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        gap: 2rem;
-
-        transition: right 0.35s ease;
-
-        z-index: 1500;
-    }
-
-    #mobileNav.active {
-        right: 0;
-    }
-
-    #nav1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5rem;
-    }
-
-    .nav1 {
-        font-size: 1.2rem;
-    }
-
-    #navbutton {
-        margin-left: 0;
-        margin-top: 1rem;
-    }
-
-    /* HAMBURGER ANIMATION */
-
-    #hamburger.active span:nth-child(1) {
-        transform: rotate(45deg) translateY(11px);
-    }
-
-    #hamburger.active span:nth-child(2) {
-        opacity: 0;
-    }
-
-    #hamburger.active span:nth-child(3) {
-        transform: rotate(-45deg) translateY(-11px);
-    }
-}
-
-/* =========================================
-   MODAL
-========================================= */
-
-.modal {
-    position: fixed;
-    inset: 0;
-
-    background: rgba(0,0,0,0.55);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    opacity: 0;
-    visibility: hidden;
-
-    transition: 0.25s ease;
-
-    z-index: 5000;
-}
-
-.modal.active {
-    opacity: 1;
-    visibility: visible;
-}
-
-.modal-content {
-    background: white;
-
-    width: min(90%, 650px);
-
-    padding: 3rem;
-
-    border-radius: 24px;
-
-    position: relative;
-
-    animation: popup 0.25s ease;
-}
-
-.modal-content h2 {
-    margin-top: 0;
-    color: var(--heading);
-}
-
-.modal-content p {
-    line-height: 1.8;
-    color: gray;
-}
-
-#closeModal {
-    position: absolute;
-
-    top: 1rem;
-    right: 1rem;
-
-    border: none;
-    background: transparent;
-
-    font-size: 2rem;
-
-    cursor: pointer;
-
-    color: #64748B;
-}
-
-#closeModal:hover {
-    color: var(--primary);
-}
-
-@keyframes popup {
-
-    from {
-        transform: scale(0.9);
-        opacity: 0;
-    }
-
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-#modalImage {
-    width: 80%;
-    max-height: 180px;
-    object-fit: cover;
-    border-radius: 12px;
-    margin: 1rem auto;
-    display: block;
-}
-
-/* =========================
-   AKTUELLES FILTER
-========================= */
-
-.filter-btn {
-    font-family: 'Montserrat', sans-serif;
-    background: transparent;
-    border: 2px solid var(--primary);
-    color: var(--text);
-
-    padding: 0.6rem 1rem;
-
-    border-radius: 2rem;
-
-    cursor: pointer;
-
-    transition: 0.2s ease;
-
-    font-weight: 600;
-}
-
-.filter-btn:hover {
-    background: var(--primary);
-    color: white;
-}
-
-.filter-btn.active {
-    background: var(--primary);
-    color: white;
-}
-
-#posts {
-    margin-bottom: 3rem;
-}
-
-/* =========================================
-   LEGAL PAGES (Datenschutz / Impressum)
+   (DATENSCHUTZ / IMPRESSUM)
 ========================================= */
 
 #legal-page {
@@ -1544,28 +1078,49 @@ footer {
     color: var(--primary-dark);
 }
 
-/* Responsive */
+/* =========================================
+   KONTAKT
+========================================= */
 
-@media (max-width: 1100px) {
-
-    #legal-page {
-        width: 90%;
-    }
-
+#kontakt {
+    margin: 4rem auto;
 }
 
-@media (max-width: 768px) {
+/* =========================
+   AKTUELLES 
+========================= */
 
-    #legal-page {
-        width: 90%;
-        margin: 4rem auto;
-    }
+.filter-btn {
+    font-family: 'Montserrat', sans-serif;
+    background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--text);
 
-    #legal-page h1 {
-        font-size: 2.3rem;
-    }
+    padding: 0.6rem 1rem;
 
+    border-radius: 2rem;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+
+    font-weight: 600;
 }
+
+.filter-btn:hover {
+    background: var(--primary);
+    color: white;
+}
+
+.filter-btn.active {
+    background: var(--primary);
+    color: white;
+}
+
+#posts {
+    margin-bottom: 3rem;
+}
+
 
 .post-card {
     background: white;
@@ -1609,11 +1164,9 @@ footer {
     font-weight: 600;
     text-decoration: none;
     text-align: center;
-
     background: white;
     color: var(--primary);
     border: 2px solid var(--primary);
-
     transition: all 0.2s ease;
 }
 
@@ -1621,6 +1174,442 @@ footer {
     background: var(--primary);
     color: white;
     border-color: var(--primary);
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .highlight-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .highlight-tag {
+        justify-self: center;
+    }
+
+    .highlight-button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    #highlight-aktuelles {
+        width: 92%;
+    }
+
+    .highlight-card {
+        padding: 1.25rem;
+        border-radius: 18px;
+        gap: 1.2rem;
+    }
+
+    .highlight-content h3 {
+        font-size: 1.05rem;
+    }
+
+    .highlight-meta,
+    .highlight-location {
+        font-size: 0.9rem;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    #ueber-uns {
+        width: 90%;
+    }
+
+    .about-intro {
+        grid-template-columns: 1fr;
+    }
+
+    .about-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .about-card:first-child {
+        min-height: auto;
+    }
+
+    .highlight-number {
+        font-size: 4rem;
+    }
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+/* TABLET */
+@media (max-width: 1100px) {
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    #herocontent {
+        width: 80%;
+    }
+
+    #ueber-uns,
+    .unsere-arbeit,
+    .footer-inner,
+    .frauen-wrapper,
+    #unsere-frauen h2,
+    #unsere-arbeit h2,
+    #kontakt {
+        width: 90%;
+    }
+
+    .arbeit-intro {
+        width: 90%;
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+   
+    .about-top {
+        grid-template-columns: 1fr;
+    }
+
+    .about-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .frau {
+        grid-template-columns: 1fr;
+    }
+
+    .frau img {
+        height: 320px;
+    }
+
+    .highlight-line {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+
+    .highlight-label {
+        height: auto;
+        padding: 0.7rem;
+    }
+
+    .highlight-button {
+        margin: 0 auto;
+    }
+
+    #aktuelles {
+        flex-wrap: wrap;
+    }
+
+    .sliderbox {
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    .footer-inner {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #legal-page {
+        width: 90%;
+    }
+   
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .site-header {
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    #nav1 {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    #navbutton {
+        justify-self: center;
+    }
+
+    #logo {
+        margin: 0 auto;
+    }
+
+    #hero {
+        height: auto;
+        padding: 5rem 0;
+    }
+
+    .hero-content {
+        width: 90%;
+        padding-top: 0;
+    }
+
+    .hero-slogan {
+        font-size: 1rem;
+    }
+
+    .about-intro p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .highlight-number {
+        font-size: 3rem;
+    }
+
+    .filter-controls {
+        width: 90%;
+        justify-content: flex-start;
+    }
+
+    .unserearbeit {
+        width: 90%;
+        padding: 0;
+        grid-template-columns: 1fr;
+    }
+
+    .arbeit {
+        width: 100%;
+    }
+
+    .content {
+        padding: 1rem;
+    }
+
+    .frau {
+        min-width: 100%;
+    }
+
+    .frau img {
+        height: 260px;
+    }
+
+    .text {
+        padding: 1.5rem;
+    }
+
+    .slider-btn {
+        display: none;
+    }
+
+    #aktuelles {
+        flex-direction: column;
+    }
+
+    .sliderbox {
+        width: 100%;
+    }
+
+    .footer-inner {
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    footer {
+        padding: 3rem 0 2rem 0;
+    }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .highlight-button,
+    .hero-btn,
+    .card-btn {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .filter-controls {
+        gap: 0.4rem;
+    }
+
+    .filter-controls label {
+        font-size: 0.9rem;
+        padding: 0.45rem 0.8rem;
+    }
+
+    .about-card {
+        padding: 1.5rem;
+    }
+
+    .highlight-line {
+        padding: 1rem;
+    }
+
+    .update-text h3 {
+        font-size: 0.95rem;
+    }
+
+    .update-text p {
+        font-size: 0.85rem;
+    }
+}
+
+/* =========================================
+   DESKTOP NAV FIX
+========================================= */
+
+@media (min-width: 769px) {
+
+    #mobileNav {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    #nav1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        gap: 2rem;
+    }
+
+    #navbutton {
+        margin-left: auto;
+    }
+
+}
+
+/* =========================================
+   MOBILE NAVIGATION
+========================================= */
+
+@media (max-width: 768px) {
+
+    .site-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 5%;
+        height: auto;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    #hamburger {
+        display: flex;
+    }
+
+    #mobileNav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background: var(--background);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        transition: right 0.35s ease;
+        z-index: 1500;
+    }
+
+    #mobileNav.active {
+        right: 0;
+    }
+
+    #nav1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .nav1 {
+        font-size: 1.2rem;
+    }
+
+    #navbutton {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    /* HAMBURGER ANIMATION */
+
+    #hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translateY(11px);
+    }
+
+    #hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translateY(-11px);
+    }
+}
+
+@media (max-width: 768px) {
+
+    #legal-page {
+        width: 90%;
+        margin: 4rem auto;
+    }
+
+    #legal-page h1 {
+        font-size: 2.3rem;
+    }
+
+}
+
+@media (max-width:768px) {
+    #ueber-uns,
+    #unsere-arbeit,
+    #unsere-frauen,
+    #aktuelles, 
+    #kontakt {
+        scroll-margin-top: 18rem;
+    }
 }
 
 @media (max-width:768px){
