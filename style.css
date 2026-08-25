@@ -641,7 +641,7 @@ input[type="radio"] {
 }
 
 /* GRID */
-.unserearbeit {
+.unsere-arbeit {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1400,7 +1400,7 @@ footer {
         justify-content: flex-start;
     }
 
-    .unserearbeit {
+    .unsere-arbeit {
         width: 90%;
         padding: 0;
         grid-template-columns: 1fr;
