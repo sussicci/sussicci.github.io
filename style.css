@@ -208,7 +208,7 @@ nav {
     margin: 0;
 }
 
-.hero-kontakt{
+.hero--kontakt{
     display:flex;
     align-items:center;
     min-height:28rem;
@@ -216,7 +216,7 @@ nav {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("DSC_0634.JPEG");
 }
 
-.hero-aktuelles{
+.hero--aktuelles{
     display:flex;
     align-items:center;
     min-height:28rem;
