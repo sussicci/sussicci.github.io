@@ -1323,11 +1323,6 @@ footer {
         flex-wrap: wrap;
     }
 
-    .sliderbox {
-        width: 50%;
-        box-sizing: border-box;
-    }
-
     .footer-inner {
         grid-template-columns: 1fr 1fr;
     }
@@ -1454,10 +1449,6 @@ footer {
 
     #aktuelles {
         flex-direction: column;
-    }
-
-    .sliderbox {
-        width: 100%;
     }
 
     .footer-inner {
