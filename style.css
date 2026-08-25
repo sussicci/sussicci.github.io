@@ -208,7 +208,7 @@ nav {
     margin: 0;
 }
 
-.hero--kontakt{
+#hero--kontakt{
     display:flex;
     align-items:center;
     min-height:28rem;
@@ -216,7 +216,7 @@ nav {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("kontakt.JPEG");
 }
 
-.hero--aktuelles{
+#hero--aktuelles{
     display:flex;
     align-items:center;
     min-height:28rem;
@@ -1263,7 +1263,11 @@ footer {
         font-size: 4rem;
     }
 
-    #hero-content {
+    .hero-content {
+        width: 80%;
+    }
+
+    .hero-small-content {
         width: 80%;
     }
 
@@ -1380,7 +1384,22 @@ footer {
         padding: 5rem 0;
     }
 
+    #hero--kontakt {
+        height: auto;
+        padding: 5rem 0;
+    }
+
+    #hero--aktuelles {
+        height: auto;
+        padding: 5rem 0;
+    }
+
     .hero-content {
+        width: 90%;
+        padding-top: 0;
+    }
+
+    .hero-small-content {
         width: 90%;
         padding-top: 0;
     }
