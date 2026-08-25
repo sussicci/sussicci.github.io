@@ -9,166 +9,153 @@
 
 <body>
 
-    <!--NAVIGATION-->
-    <section id="navigation">
+    <!-- HEADER -->
+    <header class="site-header">
+        
+        <!-- LOGO -->
         <a href="index.html" class="logo-link">
-            <img id="logo" src="logo.png" alt="Frauen für Miltenberg Logo">
+            <img class="logo" src="logo.png" alt="Frauen für Miltenberg Logo">
         </a>    
         
+        <!-- NAVIGATION -->
+        <nav id="mobileNav">
+            <ul id="nav1">
+                <li><a class="nav1" href="#ueber-uns">Über uns</a></li>
+                <li><a class="nav1" href="#unsere-arbeit">Unsere Arbeit</a></li>
+                <li><a class="nav1" href="#unsere-frauen">Unsere Frauen</a></li>
+                <li><a class="nav1" href="aktuelles.html">Aktuelles</a></li>
+            </ul>
+            <a id="navbutton" href="kontakt.html">Kontakt</a>
+        </nav>
+
         <!-- HAMBURGER -->
         <button id="hamburger" aria-label="Menü öffnen">
             <span></span>
             <span></span>
             <span></span>
         </button>
+    
+    </header>
 
-        <!-- NAV -->
-        <nav id="mobileNav">
-            <ul id="nav1">
-                <li><a class="nav1" href="#überuns">Über uns</a></li>
-                <li><a class="nav1" href="#unserearbeit">Unsere Arbeit</a></li>
-                <li><a class="nav1" href="#unserefrauen">Unsere Frauen</a></li>
-                <li><a class="nav1" href="aktuelles.html">Aktuelles</a></li>
-            </ul>
-            <a id="navbutton" href="kontakt.html">Kontakt</a>
-        </nav>
-
-    </section> 
+    <main>
 
     <!--HERO -->
-
     <section id="hero">
-        <div id="herocontent">
+        <div id="hero-content">
             <h1>Miltenberg<span class="highlighted"> <br> mit Frauen</span> gestalten</h1>
-            <p id="slogan">Wir sind „Frauen* für Miltenberg“ – eine Initiative für mehr Beteiligung, mehr Sichtbarkeit und mehr Einfluss von Frauen in der Kommunalpolitik.</p>
+            <p id="hero-slogan">Wir sind „Frauen* für Miltenberg“ – eine Initiative für mehr Beteiligung, mehr Sichtbarkeit und mehr Einfluss von Frauen in der Kommunalpolitik.</p>
             <a href="kontakt.html" class="hero-cta">Werde Teil der Initiative</a>
         </div>
     </section>
     
     <!--LETZTE UPDATE -->
-
     <section id="highlight-aktuelles">
-
-    <div class="highlight-card">
-
-        <div class="highlight-tag">
+        <article class="highlight-card">
+            <div class="highlight-tag">
             Aktuelles
-        </div>
+            </div>
+            
+            <div class="highlight-content">
+                <time 
+                    class="highlight-meta"
+                    datetime="2026-07-23T18:30">
+                    23. Juli 2026 · 18:30 Uhr
+                </time>
+                <h3>
+                    Nächstes Treffen: Sommerfest – wir feiern die Gründung unserer Arbeitsgruppen und erfahren, wie lokale Projekte erfolgreich umgesetzt werden können.
+                </h3>
+                <p class="highlight-location">
+                    Location: Vereinsheim Obst- und Gartenbauverein Miltenberg im Miltenberger Stadtpark
+                </p>
+            </div>
 
-        <div class="highlight-content">
-
-            <p class="highlight-meta">
-                23. Juli 2026 · 18:30 Uhr
-            </p>
-
-            <h3>
-                Nächstes Treffen: Sommerfest – wir feiern die Gründung unserer Arbeitsgruppen und erfahren, wie lokale Projekte erfolgreich umgesetzt werden können.
-            </h3>
-
-            <p class="highlight-location">
-                Location: Vereinsheim Obst- und Gartenbauverein Miltenberg im Miltenberger Stadtpark
-            </p>
-
-        </div>
-
-        <a href="https://www.meine-news.de/miltenberg/c-politik/miltenberg-vernetzt-sich-frauen-fuer-miltenberg-laden-zum-sommerfest-ein_a237760" class="highlight-button">
+            <a href="https://www.meine-news.de/miltenberg/c-politik/miltenberg-vernetzt-sich-frauen-fuer-miltenberg-laden-zum-sommerfest-ein_a237760" class="highlight-button">
             Mehr erfahren
-        </a>
-
-    </div>
-
-</section>
-    
-
-    <!-- ÜBER UNS -->
-
-<section id="überuns">
-
-    <!-- INTRO -->
-
-    <div class="about-top">
-        <div class="about-intro">
-
-            <span class="eyebrow">Über uns</span>
-
-            <p>
-                Frauen* für Miltenberg ist eine überparteiliche Initiative von 
-                Frauen aus Miltenberg und dem Miltenberger Raum. 
-                <br>In der Kommunalpolitik sind Frauen noch immer deutlich 
-                unterrepräsentiert – genau hier setzen wir an. 
-                <br>Unser Ziel ist es, die Perspektiven von Frauen stärker in 
-                politische und gesellschaftliche Prozesse einzubringen. 
-                <br>Kurzfristig erreichen wir das durch lokale Projekte, 
-                langfristig durch mehr Sichtbarkeit und eine stärkere Beteiligung 
-                von Frauen in der Kommunalpolitik.
-            </p>
-
-        </div>
-
-        <!-- COUNTER -->
-
-        <div class="about-highlight">
-            <div class="highlight-number">
-                <span id="counter">0</span>+
-            </div>
-
-            <div class="highlight-text">
-            Frauen sind bereits Teil der Initiative
-            </div>
-        </div>
-    </div>
-    
-    <!-- CARDS -->
-
-    <div class="about-cards">
-
-        <div class="about-card">
-            <div class="card-number">01</div>
-            <h3>Frauen vernetzen</h3>
-            <p>
-                Wir bringen Frauen unterschiedlicher Altersgruppen und 
-                Hintergründe zusammen und fördern deren Austausch, 
-                Zusammenarbeit und gegenseitige Unterstützung.
-            </p>
-        </div>
-
-        <div class="about-card">
-            <div class="card-number">02</div>
-            <h3>Lokale Projekte voranbringen</h3>
-            <p>
-                Wir sammeln Ideen aus dem Miltenberger Raum
-                und entwickeln daraus konkrete Vorschläge,
-                die wir in politische und gesellschaftliche Prozesse einbringen.
-            </p>
-        </div>
-
-        <div class="about-card">
-            <div class="card-number">03</div>
-            <h3>Engagement sichtbar machen</h3>
-            <p>
-                Wir machen sichtbar, was Frauen aus unserer 
-                Initiative für Miltenberg leisten, und stärken 
-                damit ihre Sichtbarkeit sowie das Bewusstsein für 
-                die kommunalpolitische Kompetenz von Frauen.
-                <br><br>
-                <strong>Mit oder ohne politische Erfahrung – jede ist willkommen.</strong>
-            </p>
-
-            <a class="card-btn" href="kontakt.html">
-            Jetzt mitmachen
             </a>
+
+        </article>
+    </section>
+    
+    <!-- ÜBER UNS -->
+    <section id="ueber-uns">
+        <div class="container">
+            
+            <!-- INTRO -->
+            <div class="about-top">
+                <div class="about-intro">
+                    <span class="eyebrow">Über uns</span>
+                    <p>
+                    Frauen* für Miltenberg ist eine überparteiliche Initiative von 
+                    Frauen aus Miltenberg und dem Miltenberger Raum. 
+                    <br>In der Kommunalpolitik sind Frauen noch immer deutlich 
+                    unterrepräsentiert – genau hier setzen wir an. 
+                    <br>Unser Ziel ist es, die Perspektiven von Frauen stärker in 
+                    politische und gesellschaftliche Prozesse einzubringen. 
+                    <br>Kurzfristig erreichen wir das durch lokale Projekte, 
+                    langfristig durch mehr Sichtbarkeit und eine stärkere Beteiligung 
+                    von Frauen in der Kommunalpolitik.
+                    </p>
+                </div>
+
+                <!-- COUNTER -->
+                <div class="about-highlight">
+                    <div class="highlight-number">
+                        <span id="counter">0</span>+
+                    </div>
+                    <div class="highlight-text">
+                    Frauen sind bereits Teil der Initiative
+                    </div>
+                </div>
+            </div>
+    
+            <!-- CARDS -->
+            <div class="about-cards">
+                <div class="about-card">
+                    <div class="card-number">01</div>
+                    <h3>Frauen vernetzen</h3>
+                    <p>
+                    Wir bringen Frauen unterschiedlicher Altersgruppen und 
+                    Hintergründe zusammen und fördern deren Austausch, 
+                    Zusammenarbeit und gegenseitige Unterstützung.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-number">02</div>
+                    <h3>Lokale Projekte voranbringen</h3>
+                    <p>
+                    Wir sammeln Ideen aus dem Miltenberger Raum
+                    und entwickeln daraus konkrete Vorschläge,
+                    die wir in politische und gesellschaftliche Prozesse einbringen.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-number">03</div>
+                    <h3>Engagement sichtbar machen</h3>
+                    <p>
+                    Wir machen sichtbar, was Frauen aus unserer 
+                    Initiative für Miltenberg leisten, und stärken 
+                    damit ihre Sichtbarkeit sowie das Bewusstsein für 
+                    die kommunalpolitische Kompetenz von Frauen.
+                    <br><br>
+                        <strong>Mit oder ohne politische Erfahrung – jede ist willkommen.</strong>
+                    </p>
+
+                    <a class="card-btn" href="kontakt.html">
+                    Jetzt mitmachen
+                    </a>
+                </div>
+            </div>
         </div>
-
-    </div>
-
-</section>
+    </section>
 
     <!--UNSERE ARBEIT -->
-
-    <section id="unserearbeit">
+    <section id="unsere-arbeit">
+        <div class="container">
         
-        <h2 id="h2arbeit">Unsere Arbeit</h2>
-        <p class="arbeit-intro">
+            <h2>Unsere Arbeit</h2>
+            <p class="arbeit-intro">
             Miltenberg und seine Umgebung sind bereits sehr lebenswerte Orte.
             Gleichzeitig sehen wir viele Möglichkeiten, unsere Region noch
             familienfreundlicher, nachhaltiger und attraktiver zu gestalten.
@@ -176,23 +163,23 @@
             Hier stellen wir Ideen und Projekte vor, an denen unsere Arbeitsgruppen
             bereits arbeiten – und weitere Vorhaben, die mit deinem Engagement
             Realität werden können!
-        </p>
+            </p>
 
-        <!-- INPUTS -->
-        <input type="radio" name="filter" id="aktiv">
-        <input type="radio" name="filter" id="gesucht">
-        <input type="radio" name="filter" id="fertig">
-        <input type="radio" name="filter" id="all" checked>
-        <input type="radio" name="filter" id="familie">
-        <input type="radio" name="filter" id="stadtplanung">
-        <input type="radio" name="filter" id="bildung">
-        <input type="radio" name="filter" id="ökologie">
-        <input type="radio" name="filter" id="wirtschaft">
-        <input type="radio" name="filter" id="soziales">
-        <input type="radio" name="filter" id="mobilität">
+            <!-- INPUTS -->
+            <input type="radio" name="filter" id="aktiv">
+            <input type="radio" name="filter" id="gesucht">
+            <input type="radio" name="filter" id="fertig">
+            <input type="radio" name="filter" id="all" checked>
+            <input type="radio" name="filter" id="familie">
+            <input type="radio" name="filter" id="stadtplanung">
+            <input type="radio" name="filter" id="bildung">
+            <input type="radio" name="filter" id="ökologie">
+            <input type="radio" name="filter" id="wirtschaft">
+            <input type="radio" name="filter" id="soziales">
+            <input type="radio" name="filter" id="mobilität">
 
-        <!-- FILTER BUTTONS (CSS ONLY) -->
-        <div class="filter-controls">
+            <!-- FILTER BUTTONS (CSS ONLY) -->
+            <div class="filter-controls">
 
             <!-- obere Reihe -->
             <div class="filter-top">
@@ -212,10 +199,10 @@
                 <label for="soziales">Soziales</label>
                 <label for="ökologie">Ökologie</label>
             </div>
-        </div>
+            </div>
 
         <!-- ARBEIT GRID -->
-        <div class="unserearbeit">
+        <div class="unsere-arbeit">
 
             <div class="arbeit stadtplanung aktiv">    
                 <div class="status-badge aktiv">Aktiv</div>            
@@ -795,6 +782,7 @@
             <button id="loadMoreBtn">Mehr anzeigen</button>
             <button id="showLessBtn">Weniger anzeigen</button>
         </div>
+            </div>
     </section>
 
     <!-- MODAL -->
@@ -814,7 +802,7 @@
     
     <!--UNSERE FRAUEN -->
 
-    <section id="unserefrauen">
+    <section id="unsere-frauen">
 
     <h2>Unsere Frauen</h2>
 
@@ -902,9 +890,9 @@
         <div class="footer-col">
             <h3>Navigation</h3>
             <ul>
-                <li><a href="#überuns">Über uns</a></li>
-                <li><a href="#unserearbeit">Unsere Arbeit</a></li>
-                <li><a href="#unserefrauen">Unsere Frauen</a></li>
+                <li><a href="#ueber-uns">Über uns</a></li>
+                <li><a href="#unsere-arbeit">Unsere Arbeit</a></li>
+                <li><a href="#unsere-frauen">Unsere Frauen</a></li>
                 <li><a href="aktuelles.html">Aktuelles</a></li>
             </ul>
         </div>
@@ -923,6 +911,8 @@
         <p>© 2026 Frauen* für Miltenberg</p>
     </div>
 
+    </main>
+    
 </footer>
 <script src="script.js" defer></script>
 
