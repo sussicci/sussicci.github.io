@@ -43,6 +43,7 @@
     --white: #FFFFFF;
 
     --gray: #475569;
+    --muted: #64748b;
 }
 
 body {
@@ -296,7 +297,7 @@ nav {
 
 .highlight-tag {
     background: var(--primary);
-    color: white;
+    color: var(--white);
     padding: 0.7rem 1rem;
     border-radius: 999px;
     font-size: 0.75rem;
@@ -312,7 +313,7 @@ nav {
     margin: 0 0 0.5rem;
     font-size: 0.85rem;
     font-weight: 700;
-    color: #64748B;
+    color: var(--muted);
 }
 
 .highlight-content h3 {
@@ -324,7 +325,7 @@ nav {
 
 .highlight-location {
     margin-top: 0.6rem;
-    color: gray;
+    color: var(--gray);
     line-height: 1.5;
 }
 
@@ -342,7 +343,7 @@ nav {
 
 .highlight-button:hover {
     background: var(--primary);
-    color: white;
+    color: var(--white);
 }
 
 /* =========================
@@ -376,7 +377,7 @@ nav {
 .about-intro p {
     font-size: 1.15rem;
     line-height: 1.9;
-    color: gray;
+    color: var(--gray);
 }
 
 .eyebrow {
@@ -431,7 +432,7 @@ nav {
 }
 
 .about-card {
-    background: white;
+    background: var(--white);
     padding: 2rem;
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
@@ -464,14 +465,14 @@ nav {
 
 .about-card p {
     line-height: 1.8;
-    color: gray;
+    color: var(--gray);
 }
 
 .card-btn {
     font-family: 'Montserrat', sans-serif;
     background: var(--primary);
     border: 2px solid var(--primary);
-    color: white;
+    color: var(--white);
     text-decoration: none;
     display: inline-block;
     font-size: 1rem;
@@ -580,7 +581,7 @@ input[type="radio"] {
 
     background-color: var(--primary);
     border-color: var(--primary);
-    color: white;
+    color: var(--white);
 }
 
 /* Labels als Buttons */
@@ -619,28 +620,28 @@ input[type="radio"] {
 
 .status-badge.aktiv {
     background: rgba(123,44,191,0.95);
-    color: white;
+    color: var(--white);
 }
 
 /* GESUCHT */
 
 .status-badge.gesucht {
     background: rgba(245,158,11,0.95);
-    color: white;
+    color: var(--white);
 }
 
 /* PLANUNG */
 
 .status-badge.planung {
     background: rgba(148,163,184,0.95);
-    color: white;
+    color: var(--white);
 }
 
 /* UMGESETZT */
 
 .status-badge.fertig {
     background: rgba(16,185,129,0.95);
-    color: white;
+    color: var(--white);
 }
 
 /* GRID */
@@ -662,7 +663,7 @@ input[type="radio"] {
     transition: 0.2s;
     border-radius: 12px;
     overflow: hidden;
-    background-color: white;
+    background-color: var(--white);
     color: #111827;
     display: flex;
     flex-direction: column;
@@ -705,7 +706,7 @@ input[type="radio"] {
 }
 
 .arbeit p {
-    color: gray;
+    color: var(--gray);
 }
 
 .load-more-container {
@@ -717,7 +718,7 @@ input[type="radio"] {
 
 #loadMoreBtn {
     background-color: var(--primary);
-    color: white;
+    color: var(--white);
     border: none;
     padding: 0.8rem 1.5rem;
     border-radius: 2rem;
@@ -743,14 +744,14 @@ input[type="radio"] {
 
 #showLessBtn:hover {
     background-color: var(--primary);
-    color: white;
+    color: var(--white);
 }
 
 .join-btn {
     font-family: 'Montserrat', sans-serif;
     background: var(--primary);
     border: 2px solid var(--primary);
-    color: white;
+    color: var(--white);
     text-decoration: none;
     display: inline-block;
     font-size: 1rem;
@@ -844,7 +845,7 @@ input[type="radio"] {
 
 .frau-content p {
     line-height: 1.7;
-    color: gray;
+    color: var(--gray);
 }
 
 /* Pfeile */
@@ -855,7 +856,7 @@ input[type="radio"] {
     z-index: 10;
 
     background: var(--primary);
-    color: white;
+    color: var(--white);
     border: none;
 
     width: 40px;
@@ -905,7 +906,7 @@ input[type="radio"] {
 }
 
 .modal-content {
-    background: white;
+    background: var(--white);
     width: min(90%, 650px);
     padding: 3rem;
     border-radius: 24px;
@@ -920,7 +921,7 @@ input[type="radio"] {
 
 .modal-content p {
     line-height: 1.8;
-    color: gray;
+    color: var(--gray);
 }
 
 #closeModal {
@@ -931,7 +932,7 @@ input[type="radio"] {
     background: transparent;
     font-size: 2rem;
     cursor: pointer;
-    color: #64748B;
+    color: var(--muted);
 }
 
 #closeModal:hover {
@@ -966,7 +967,7 @@ input[type="radio"] {
 
 footer {
     background-color: var(--text);
-    color: white;
+    color: var(--white);
     padding: 4rem 0 2rem 0;
 }
 
@@ -1062,7 +1063,7 @@ footer {
 #legal-page li {
     font-size: 1rem;
     line-height: 1.9;
-    color: gray;
+    color: var(--gray);
 }
 
 #legal-page p {
@@ -1112,12 +1113,12 @@ footer {
 
 .filter-btn:hover {
     background: var(--primary);
-    color: white;
+    color: var(--white);
 }
 
 .filter-btn.active {
     background: var(--primary);
-    color: white;
+    color: var(--white);
 }
 
 #posts {
@@ -1126,7 +1127,7 @@ footer {
 
 
 .post-card {
-    background: white;
+    background: var(--white);
     padding: 2rem;
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
@@ -1146,7 +1147,7 @@ footer {
 
 .post-card p {
     line-height: 1.8;
-    color: gray;
+    color: var(--gray);
 }
 
 .post-card-number {
@@ -1167,7 +1168,7 @@ footer {
     font-weight: 600;
     text-decoration: none;
     text-align: center;
-    background: white;
+    background: var(--white);
     color: var(--primary);
     border: 2px solid var(--primary);
     transition: all 0.2s ease;
@@ -1175,7 +1176,7 @@ footer {
 
 .post-card-btn:hover {
     background: var(--primary);
-    color: white;
+    color: var(--white);
     border-color: var(--primary);
 }
 
