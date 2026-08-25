@@ -833,16 +833,16 @@ input[type="radio"] {
     object-fit: cover;
 }
 
-.text {
+.frau-content {
     padding: 2rem;
 }
 
-.text h3 {
+.frau-content h3 {
     margin-top: 0;
     color: var(--heading);
 }
 
-.text p {
+.frau-content p {
     line-height: 1.7;
     color: gray;
 }
@@ -1439,7 +1439,7 @@ footer {
         height: 260px;
     }
 
-    .text {
+    .frau-content {
         padding: 1.5rem;
     }
 
