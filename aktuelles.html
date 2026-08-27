@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Aktuelles | Frauen* für Miltenberg</title>
 </head>
@@ -15,7 +14,7 @@
         
         <!-- LOGO -->
         <a href="index.html" class="logo-link">
-            <img class="logo" src="logo.png" alt="Frauen* für Miltenberg Logo">
+            <img class="logo" src="./logo.png" alt="Frauen* für Miltenberg Logo">
         </a>    
         
         <!-- NAVIGATION -->
@@ -28,69 +27,75 @@
             </ul>
             <a id="navbutton" href="kontakt.html">Kontakt</a>
         </nav>
-
+        
         <!-- HAMBURGER -->
-        <button type="button" id="hamburger" aria-label="Menü öffnen">
+        <button id="hamburger" aria-label="Menü öffnen">
             <span></span>
             <span></span>
             <span></span>
         </button>
-    
-    </header>
 
-<!-- HERO -->    
-    <header id="hero--aktuelles">
+    </header> 
+
+<main>
+        
+<!-- HERO -->
+<section id="hero--aktuelles">
     <div class="hero-small-content">
         <h1>Aktuelles</h1>
         <p class="hero-slogan">
             Termine, Veranstaltungen und Einblicke in unsere aktuelle Arbeit.
         </p>
     </div>
-</header>
-
-<!-- CONTENT -->
-<main id="aktuelles-main">
+</section>
 
     <!-- FILTER / CATEGORIES -->
-    <section style="margin-bottom:3rem;">
+    <section id="aktuelles">
+        <div class="container">
         <h2>Neueste Beiträge</h2>
 
         <div class="filter-controls">
 
     <div class="filter-top">
 
-        <button type="button" class="filter-btn active" data-filter="all">
+        <button class="filter-btn active" data-filter="all">
             Alle
         </button>
 
-        <button type="button" class="filter-btn" data-filter="termin">
+        <button class="filter-btn" data-filter="termin">
             Termine
         </button>
 
-        <button type="button" class="filter-btn" data-filter="presse">
+        <button class="filter-btn" data-filter="presse">
             Presse
+        </button>
+
+        <button class="filter-btn" data-filter="veranstaltung">
+            Veranstaltungen
         </button>
 
     </div>
 
 </div>
-    </section>
+        
 
     <!-- BLOG LIST -->
-    <section id="posts" style="display:flex; flex-direction:column; gap:2rem;">
+    <section id="posts">
     </section>
     
     <div class="load-more-container">
 
-    <button type="button" id="loadMoreBtn">
+    <button id="loadMoreBtn">
         Mehr anzeigen
     </button>
 
-    <button type="button" id="showLessBtn">
+    <button id="showLessBtn">
         Weniger anzeigen
     </button>
 
     </div>
+            </div>
+    </section>
 </main>
 
 
@@ -109,9 +114,9 @@
         <div class="footer-col">
             <h3>Navigation</h3>
             <ul>
-                <li><a href="index.html#überuns">Über uns</a></li>
-                <li><a href="index.html#unserearbeit">Unsere Arbeit</a></li>
-                <li><a href="index.html#unserefrauen">Unsere Frauen</a></li>
+                <li><a href="index.html#ueber-uns">Über uns</a></li>
+                <li><a href="index.html#unsere-arbeit">Unsere Arbeit</a></li>
+                <li><a href="index.html#unsere-frauen">Unsere Frauen</a></li>
                 <li><a href="aktuelles.html">Aktuelles</a></li>
             </ul>
         </div>
@@ -265,7 +270,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-        /* =========================
+    /* =========================
     HAMBURGER MENU
     ========================= */
 
@@ -292,8 +297,8 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
     });
-});
 
+});
 </script>
 </body>
 </html>
