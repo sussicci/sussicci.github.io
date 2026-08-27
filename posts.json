@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-08-14",
+    "title": "Artikel: Sommerfest der Initiative „Frauen* für Miltenberg“ bringt Frauen zusammen und setzt Impulse",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Rund 40 Frauen aller Altersgruppen folgten am 23. Juli der Einladung der Initiative „Frauen* für Miltenberg“ zu ihrem Sommerfest. In entspannter Atmosphäre bot die Veranstaltung Gelegenheit, die neue Initiative kennenzulernen, miteinander ins Gespräch zu kommen und sich über die verschiedenen Projekte und Arbeitsgruppen der Initiative zu informieren. Die große Resonanz zeigte, dass das Interesse an Vernetzung, gegenseitiger Unterstützung und Mitgestaltung im Miltenberger Raum groß ist...."
+      }
+    ],
+    "type": "presse",
+    "linkText": "Zum Artikel",
+    "link": "https://www.meine-news.de/miltenberg/c-politik/sommerfest-der-initiative-frauen-fuer-miltenberg-bringt-frauen-zusammen-und-setzt-impulse_a241890#gallery=null"
+  },
+  {
     "date": "2026-07-23",
     "title": "Nächste Veranstaltung: Sommerfest – wir feiern die Gründung unserer Arbeitsgruppen und erfahren, wie lokale Projekte erfolgreich umgesetzt werden können.",
     "content": [
@@ -28,15 +41,17 @@
         "text": "Wer dabei ist, erlebt einen Sommerabend mit vielen Begegnungen, neuen Eindrücken und guten Gesprächen – und vielleicht entsteht daraus der Anfang für gemeinsames Gestalten in Miltenberg."
       }
     ],
-    "type": "termin"
+    "type": "veranstaltung",
+    "linkText": "Anmelden",
+    "link": "kontakt.html"
   },  
   {
     "date": "2026-06-23",
-    "title": "Artikel: Miltenberg vernetzt sich: „Frauen* für Miltenberg“ laden zum Sommerfest ein",
+    "title": "Artikel: Miltenberg vernetzt sich: „Frauen für Miltenberg“ laden zum Sommerfest ein",
     "content": [
       {
         "type": "paragraph",
-        "text": "Die Initiative „Frauen* für Miltenberg“ nimmt weiter Fahrt auf: Aus den ersten Treffen ist ein lebendiges Netzwerk entstanden. Rund 50 Frauen aus Miltenberg und Umgebung sind inzwischen dabei, etwa 20 von ihnen engagieren sich bereits in Arbeitsgruppen..."
+        "text": "Die Initiative „Frauen für Miltenberg“ nimmt weiter Fahrt auf: Aus den ersten Treffen ist ein lebendiges Netzwerk entstanden. Rund 50 Frauen aus Miltenberg und Umgebung sind inzwischen dabei, etwa 20 von ihnen engagieren sich bereits in Arbeitsgruppen..."
       }
     ],
     "type": "presse",
@@ -52,7 +67,9 @@
         "text": "Am Montag, 18. Mai, um 19 Uhr im Kindergarten St. Franziskus in Miltenberg geht es weiter. Alle Miltenbergerinnen und Frauen aus dem Miltenberger Raum sind herzlich eingeladen!\n\nGeplant sind:\n- die Priorisierung der bisher gesammelten Themen,\n- die Gründung erster Arbeitskreise,\n- sowie die weitere organisatorische Planung der Initiative.\n\nSpontane Teilnahme ist willkommen, eine Anmeldung erleichtert jedoch die Planung."
       }
     ],
-    "type": "termin"
+    "type": "termin",
+    "linkText": "Anmelden",
+    "link": "kontakt.html"
   },
   {
     "date": "2026-05-11",
@@ -76,11 +93,13 @@
         "text": "Erstes Treffen der Initiative mit vielen Ideen und Austausch über zukünftige Projekte."
       }
     ],
-    "type": "termin"
+    "type": "termin",
+    "linkText": "Anmelden",
+    "link": "kontakt.html"
   },
   {
     "date": "2026-04-19",
-    "title": "Artikel: „Frauen* für Miltenberg“: Neue Initiative für mehr Vielfalt im Stadtrat",
+    "title": "Artikel: „Frauen für Miltenberg“: Neue Initiative für mehr Vielfalt im Stadtrat",
     "content": [
       {
         "type": "paragraph", 
