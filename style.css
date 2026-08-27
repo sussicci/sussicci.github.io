@@ -1,6 +1,3 @@
-/* =========================================
-   BASICS
-========================================= */
 @font-face {
     font-family: 'Montserrat';
     src: url('./Montserrat-Regular.ttf') format('truetype');
@@ -32,6 +29,7 @@
 }
 
 :root {
+
     --primary: #7B2CBF;
     --primary-dark: #5A189A;
 
@@ -44,6 +42,7 @@
 
     --gray: #475569;
     --muted: #64748b;
+
 }
 
 body {
@@ -72,14 +71,9 @@ h3 {
 h2 {
     font-size: 2.2rem;
 }
-    
+
 h3 {
     font-size: 1.2rem;
-}
-
-h4 {
-    margin-bottom: 0;
-    font-weight: normal;
 }
 
 a {
@@ -87,7 +81,6 @@ a {
     color: var(--text);
     font-weight: 700;
 }
-
 
 a:hover {
     color: var(--primary);
@@ -116,9 +109,8 @@ img {
     height: 12rem;
     background-color: var(--white);
     color: var(--text);
-    padding: 0 5% 0 5%;
+    padding: 0 5%;
 }
-
 /* =========================================
    LOGO
 ========================================= */
@@ -130,13 +122,14 @@ img {
    NAVIGATION
 ========================================= */
 nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: contents;
 }
 
 #nav1 {
+    grid-column: 2;
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 4rem;
     font-size: 1.16rem;
     list-style: none;
@@ -153,7 +146,6 @@ nav {
 }
 
 #navbutton {
-    justify-self: end;
     padding: 0.5rem 1rem;
     border: 2px solid var(--primary);
     border-radius: 2rem;
@@ -163,6 +155,8 @@ nav {
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 0.05em;
+    white-space: nowrap;
+    grid-column: 3;
 }
 
 #navbutton:hover {
@@ -200,41 +194,52 @@ nav {
 /* =========================================
    HERO
 ========================================= */
+
+
 #hero {
-    height: 44rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("sommerfest1.png"); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("sommerfest1.png");  
 }
 
-#hero--kontakt{
-    display:flex;
-    align-items:center;
-    min-height:28rem;
-    max-height: 28rem;
+#hero--aktuelles {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("Namnloest.jpg");
+}
+
+#hero--kontakt {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("kontakt.JPEG");
 }
 
-#hero--aktuelles{
-    display:flex;
-    align-items:center;
-    min-height:28rem;
-    max-height: 28rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("aktuelles.jpg");
+#hero--kontakt,
+#hero--aktuelles {
+    display: flex;
+    align-items: center;
+    height: 28rem;
 }
 
-.hero-content {
+#hero, 
+#hero--kontakt, 
+#hero--aktuelles {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+}
+
+#hero {
+    height: 44rem;
+}
+
+.hero-content, 
+.hero-small-content {
     width: 65%;
-    padding-top: 4rem;
     margin: 0 auto;
 }
 
+.hero-content {
+    padding-top: 4rem;
+}
+
 .hero-small-content{
-    width:65%;
-    margin:0 auto;
-    padding-top:0;
+    padding-top: 0;
 }
 
 .hero-slogan {
@@ -243,10 +248,11 @@ nav {
     font-weight: 700;
     margin-bottom: 3rem;
     font-size: 1.16rem;
+    max-width: 800px;
 }
 
 .highlighted {
-    color: var(--primary);
+    color:var(--primary);
 }
 
 .hero-cta {
@@ -365,7 +371,7 @@ nav {
     gap: 3rem;
     align-items: start;
     margin-bottom: 3rem;
-    align-items: stretch; 
+    align-items: stretch; /* wichtig: volle Höhe nutzen */
 }
 
 .about-intro {
@@ -396,7 +402,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; 
+    justify-content: center; /* ← das ist der vertikale Kern */
     text-align: center;
     height: 100%;
 }
@@ -453,7 +459,7 @@ nav {
 }
 
 .about-card:hover a {
-    background-color: var(--background);
+    background-color:var(--background);
     color: var(--primary);
 }
 
@@ -501,6 +507,7 @@ nav {
     color: var(--background);
 }
 
+
 /* =========================
    UNSERE ARBEIT
 ========================= */
@@ -519,17 +526,6 @@ nav {
     margin-bottom: 0.5rem;
 }
 
-.arbeit-intro {
-    width: min(760px, 90%);
-    margin: 1.5rem auto 4rem auto;
-    font-size: 1.15rem;
-    line-height: 1.95;
-    text-align: center;
-    color: #334155;
-    font-weight: 500;
-    position: relative;
-}
-
 /* kleine decorative line */
 .arbeit-intro::before {
     content: "";
@@ -539,6 +535,17 @@ nav {
     margin: 0 auto 1.5rem auto;
     border-radius: 999px;
     background: var(--primary);
+}
+
+.arbeit-intro {
+    width: min(760px, 90%);
+    margin: 1.5rem auto 4rem auto;
+    font-size: 1.15rem;
+    line-height: 1.95;
+    text-align: center;
+    color: #334155;
+    font-weight: 500;
+    position: relative;
 }
 
 /* FILTER BUTTONS */
@@ -579,9 +586,9 @@ input[type="radio"] {
 #soziales:checked ~ .filter-controls label[for="soziales"],
 #ökologie:checked ~ .filter-controls label[for="ökologie"] {
 
-    background-color: var(--primary);
-    border-color: var(--primary);
-    color: var(--white);
+    background-color: #7B2CBF;
+    border-color: #7B2CBF;
+    color: #ffffff;
 }
 
 /* Labels als Buttons */
@@ -589,18 +596,17 @@ input[type="radio"] {
     display: inline-block;
     padding: 0.5rem 1rem;
     margin: 0rem;
-    border: 2px solid var(--primary);
-    color: var(--heading);
+    border: 2px solid #7B2CBF;
+    color: #0F172A;
     border-radius: 2rem;
     cursor: pointer;
     transition: 0.2s;
 }
 
 .filter-controls label:hover {
-    background-color: var(--primary);
-    color: var(--background);
+    background-color: #7B2CBF;
+    color: #F8FAFC;
 }
-
 
 /* STATUS */
 
@@ -646,12 +652,11 @@ input[type="radio"] {
 
 /* GRID */
 .arbeit-grid {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1rem;
     margin: 0 auto;
-    padding: 2rem;
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
     background-color: var(--light);
     color: #111827;
 }
@@ -717,8 +722,8 @@ input[type="radio"] {
 }
 
 #loadMoreBtn {
-    background-color: var(--primary);
-    color: var(--white);
+    background-color: #7B2CBF;
+    color: white;
     border: none;
     padding: 0.8rem 1.5rem;
     border-radius: 2rem;
@@ -727,13 +732,13 @@ input[type="radio"] {
 }
 
 #loadMoreBtn:hover {
-    background-color: var(--primary-dark);
+    background-color: #5a189a;
 }
 
 #showLessBtn {
     background-color: transparent;
-    color: var(--primary);
-    border: 2px solid var(--primary);
+    color: #7B2CBF;
+    border: 2px solid #7B2CBF;
     padding: 0.8rem 1.5rem;
     border-radius: 2rem;
     cursor: pointer;
@@ -743,8 +748,8 @@ input[type="radio"] {
 }
 
 #showLessBtn:hover {
-    background-color: var(--primary);
-    color: var(--white);
+    background-color: #7B2CBF;
+    color: white;
 }
 
 .join-btn {
@@ -786,17 +791,6 @@ input[type="radio"] {
     margin-bottom: 0.5rem;
 }
 
-/* kleine decorative line */
-#unsere-frauen h2::after {
-    content: "";
-    display: block;
-    width: 64px;
-    height: 4px;
-    margin: 1.5rem auto 1.5rem auto;
-    border-radius: 999px;
-    background: var(--primary);
-}
-
 .frauen-wrapper {
     width: 100%;
     margin: 1.5rem auto;
@@ -827,7 +821,6 @@ input[type="radio"] {
     overflow: hidden;
 }
 
-
 .frau img {
     width: 100%;
     height: 100%;
@@ -848,17 +841,26 @@ input[type="radio"] {
     color: var(--gray);
 }
 
+.quote {
+    margin-top: 1.5rem;
+    padding: 1rem 1.25rem;
+    border-left: 4px solid #7B2CBF;
+    color: #334155 !important;
+    font-style: italic;
+    line-height: 1.6;
+    background: rgba(123, 44, 191, 0.06);
+    border-radius: 0 10px 10px 0;
+}
+
 /* Pfeile */
 .slider-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     z-index: 10;
-
     background: var(--primary);
     color: var(--white);
     border: none;
-
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -1091,43 +1093,44 @@ footer {
 }
 
 /* =========================
-   AKTUELLES 
+   AKTUELLES
 ========================= */
+
+#aktuelles {
+    margin: 4rem auto;
+}
 
 .filter-btn {
     font-family: 'Montserrat', sans-serif;
     background: transparent;
-    border: 2px solid var(--primary);
-    color: var(--text);
-
+    border: 2px solid #7B2CBF;
+    color: #1E293B;
     padding: 0.6rem 1rem;
-
     border-radius: 2rem;
-
     cursor: pointer;
-
     transition: 0.2s ease;
-
     font-weight: 600;
 }
 
 .filter-btn:hover {
-    background: var(--primary);
-    color: var(--white);
+    background: #7B2CBF;
+    color: white;
 }
 
 .filter-btn.active {
-    background: var(--primary);
-    color: var(--white);
+    background: #7B2CBF;
+    color: white;
 }
 
 #posts {
     margin-bottom: 3rem;
+    display: flex; 
+    flex-direction: column; 
+    gap: 2rem;
 }
 
-
 .post-card {
-    background: var(--white);
+    background: white;
     padding: 2rem;
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
@@ -1147,13 +1150,13 @@ footer {
 
 .post-card p {
     line-height: 1.8;
-    color: var(--gray);
+    color: #475569;
 }
 
 .post-card-number {
     font-size: 2.2rem;
     font-weight: 600;
-    color: var(--primary);
+    color: #7B2CBF;
     margin-bottom: 0.5rem;
     letter-spacing: 0.05em;
 }
@@ -1162,246 +1165,287 @@ footer {
     display: inline-block;
     padding: 0.5rem 1rem;
     border-radius: 2rem;
-
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
     text-align: center;
-    background: var(--white);
-    color: var(--primary);
-    border: 2px solid var(--primary);
+    background: white;
+    color: #7B2CBF;
+    border: 2px solid #7B2CBF;
     transition: all 0.2s ease;
 }
 
 .post-card-btn:hover {
-    background: var(--primary);
-    color: var(--white);
-    border-color: var(--primary);
+    background: #7B2CBF;
+    color: white;
+    border-color: #7B2CBF;
 }
 
 /* =========================================
-   TABLET
+   (DATENSCHUTZ / IMPRESSUM)
 ========================================= */
-
-@media (max-width: 900px) {
-
-    .highlight-card {
-        grid-template-columns: 1fr;
-        text-align: center;
-        padding: 1.5rem;
-    }
-
-    .highlight-tag {
-        justify-self: center;
-    }
-
-    .highlight-button {
-        width: 100%;
-        box-sizing: border-box;
-    }
-}
 
 /* =========================================
-   MOBILE
+   RESPONSIVE
 ========================================= */
 
-@media (max-width: 600px) {
+/* =========================
+   TABLET / SMALL DESKTOP
+========================= */
 
-    #highlight-aktuelles {
-        width: 92%;
-    }
-
-    .highlight-card {
-        padding: 1.25rem;
-        border-radius: 18px;
-        gap: 1.2rem;
-    }
-
-    .highlight-content h3 {
-        font-size: 1.05rem;
-    }
-
-    .highlight-meta,
-    .highlight-location {
-        font-size: 0.9rem;
-    }
-}
-
-/* MOBILE */
-
-@media (max-width: 900px) {
-
-    #ueber-uns {
-        width: 90%;
-    }
-
-    .about-intro {
-        grid-template-columns: 1fr;
-    }
-
-    .about-cards {
-        grid-template-columns: 1fr;
-    }
-
-    .about-card:first-child {
-        min-height: auto;
-    }
-
-    .highlight-number {
-        font-size: 4rem;
-    }
-}
-
-/* =========================================
-   RESPONSIVE DESIGN
-========================================= */
-
-/* TABLET */
 @media (max-width: 1100px) {
 
+    /* CONTAINER*/
+    .container,
+    .hero-content,
+    .hero-small-content,
+    .footer-inner,
+    #legal-page {
+        width: min(70%, 1000px);
+        margin-inline: auto;
+    }
+
+    /* TYPOGRAPHY */
     h1 {
         font-size: 4rem;
     }
 
+    /* =========================
+       HEADER
+    ========================= */
+
+    .site-header {
+        height: 9rem;
+        padding: 0 5%;
+    }
+
+    .logo {
+        height: 8rem;
+    }
+
+    /* =========================
+       NAVIGATION
+    ========================= */
+
+    #hamburger {
+        display: flex;
+        margin-left: auto;
+        z-index: 1600;
+    }
+
+    #mobileNav {
+        position: fixed;
+        inset: 0;
+        width: 100%;
+        height: 100vh;
+        background: var(--background);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        transform: translateX(100%);
+        transition: transform 0.35s ease;
+        z-index: 1500;
+    }
+
+    #mobileNav.active {
+        transform: translateX(0);
+    }
+
+    #nav1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav1 {
+        font-size: 1.2rem;
+    }
+
+    #navbutton {
+        margin: 1rem 0 0;
+    }
+
+    /* =========================
+       HAMBURGER
+    ========================= */
+
+    #hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translateY(11px);
+    }
+
+    #hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translateY(-11px);
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    #hero {
+        min-height: 38rem;
+        height: auto;
+    }
+
+    #hero--kontakt,
+    #hero--aktuelles {
+        min-height: 24rem;
+        height: auto;
+    }
+
     .hero-content {
-        width: 80%;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
     }
 
-    .hero-small-content {
-        width: 80%;
-    }
+    /* =========================
+       ABOUT
+    ========================= */
 
-    #ueber-uns,
-    .arbeit-grid,
-    .footer-inner,
-    .frauen-wrapper,
-    #unsere-frauen h2,
-    #unsere-arbeit h2,
-    #kontakt {
-        width: 90%;
-    }
-
-    .arbeit-intro {
-        width: 90%;
-        font-size: 1rem;
-        line-height: 1.7;
-    }
-   
     .about-top {
         grid-template-columns: 1fr;
     }
-
+    
     .about-cards {
         grid-template-columns: 1fr;
     }
 
-    .frau {
+    /*.highlight-line {
         grid-template-columns: 1fr;
-    }
+        text-align: center;
+        gap: 1rem;
+        padding: 1.5rem;
+    }*/
+
+    /*.highlight-label {
+        height: auto;
+        padding: 0.7rem;
+    }*/
+    
+    /* =========================
+       FRAUEN
+    ========================= */
 
     .frau img {
         height: 320px;
     }
 
-    .highlight-line {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 1rem;
-        padding: 1.5rem;
-    }
-
-    .highlight-label {
-        height: auto;
-        padding: 0.7rem;
-    }
-
-    .highlight-button {
-        margin: 0 auto;
-    }
-
-    #aktuelles {
-        flex-wrap: wrap;
-    }
+    /* =========================
+       FOOTER
+    ========================= */
 
     .footer-inner {
         grid-template-columns: 1fr 1fr;
     }
 
-    #legal-page {
-        width: 90%;
+    /* =========================
+       KONTAKT
+    ========================= */
+
+    #kontakt .about-card {
+        margin-top: 2rem;
     }
-   
+
+    /* =========================
+       AKTUELLES
+    ========================= */
+
+    /*#aktuelles {
+        flex-wrap: wrap;
+    }*/
 }
 
-/* MOBILE */
+/* =========================
+   MOBILE
+========================= */
+
 @media (max-width: 768px) {
 
     body {
         overflow-x: hidden;
     }
 
+
+    /* TYPOGRAPHY */
+    
     h1 {
-        font-size: 2.8rem;
-        line-height: 1.2;
+        font-size: clamp(2.4rem, 9vw, 3.2rem);
+        line-height: 1.15;
     }
 
     h2 {
         font-size: 1.8rem;
     }
 
-    .site-header {
-        grid-template-columns: 1fr;
-        height: auto;
-        padding: 1rem;
-        gap: 1rem;
-    }
+    /* HERO */
 
-    nav {
-        width: 100%;
-    }
-
-    #nav1 {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.5rem;
-    }
-
-    #navbutton {
-        justify-self: center;
-    }
-
-    #logo {
-        margin: 0 auto;
-    }
-
-    #hero {
-        height: auto;
-        padding: 5rem 0;
-    }
-
-    #hero--kontakt {
-        height: auto;
-        padding: 5rem 0;
-    }
-
+    #hero,
+    #hero--kontakt,
     #hero--aktuelles {
-        height: auto;
+        min-height: auto;
         padding: 5rem 0;
     }
 
-    .hero-content {
-        width: 90%;
-        padding-top: 0;
-    }
-
+    .hero-content,
     .hero-small-content {
-        width: 90%;
-        padding-top: 0;
+        /*width: 90%;*/
+        padding: 0;
     }
 
     .hero-slogan {
         font-size: 1rem;
+    }
+
+    .hero-cta {
+        display: inline-block;
+        font-size: 1rem;
+    }
+
+    /* AKTUELLES*/ 
+
+    .highlight-card {
+        padding: 1.25rem;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+        border-radius: 18px;
+        text-align: center;
+    }
+
+    .highlight-content h3 {
+        font-size: 1.05rem;
+        padding-top: 0.5rem;
+    }
+
+    .highlight-meta,
+    .highlight-location {
+        font-size: 0.9rem;
+    }
+
+    .highlight-button {
+        display: inline-block;
+        width: fit-content;
+        justify-self: center;
+        padding: 0.5rem 1.3rem;
+    }
+
+    .highlight-tag {
+        justify-self: center;
+    }
+
+    /* ÜBER UNS */
+
+    
+    #ueber-uns {
+        padding: 0;
     }
 
     .about-intro p {
@@ -1410,34 +1454,55 @@ footer {
     }
 
     .highlight-number {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
+
+    /* ARBEIT */
 
     .filter-controls {
         width: 90%;
         justify-content: flex-start;
     }
-
-    .arbeit-grid {
-        width: 90%;
-        padding: 0;
-        grid-template-columns: 1fr;
+    
+    #unsere-arbeit {
+        padding: 4rem 0;
     }
 
-    .arbeit {
-        width: 100%;
+    #unsere-arbeit h2,
+    #unsere-frauen h2 {
+        font-size: 2rem;
+    }
+
+    .arbeit-intro {
+        font-size: 1rem;
+        line-height: 1.7;
+        margin-bottom: 2.5rem;
+    }
+
+    .arbeit-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
     }
 
     .arbeit-content {
-        padding: 1rem;
+        padding: 1.25rem;
+    }
+
+    /* FRAUEN */
+
+    #unsere-frauen {
+        padding: 4rem 0;
     }
 
     .frau {
         min-width: 100%;
+        grid-template-columns: 1fr;
     }
-
+    
     .frau img {
+        width: 100%;
         height: 260px;
+        object-fit: cover;
     }
 
     .frau-content {
@@ -1448,8 +1513,14 @@ footer {
         display: none;
     }
 
-    #aktuelles {
+    /*#aktuelles {
         flex-direction: column;
+    }*/
+
+    /* FOOTER */
+
+    footer {
+        padding: 3rem 0 2rem;
     }
 
     .footer-inner {
@@ -1458,37 +1529,87 @@ footer {
         gap: 2rem;
     }
 
-    footer {
-        padding: 3rem 0 2rem 0;
+
+    .footer-inner {
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    /* LEGAL */
+
+    #legal-page {
+        width: 90%;
+        margin: 4rem auto;
+    }
+
+    #legal-page h1 {
+        font-size: 2.3rem;
+    }
+
+    #legal-page h2 {
+        font-size: 1.5rem;
+    }
+
+    #legal-page p,
+    #legal-page li {
+        font-size: 0.95rem;
+        line-height: 1.75;
     }
 }
 
-/* SMALL MOBILE */
+/* =========================
+   SMALL MOBILE
+========================= */
+
 @media (max-width: 480px) {
 
-    h1 {
-        font-size: 2.2rem;
+    .container,
+    .hero-content,
+    .hero-small-content {
+        width: 80%;
     }
 
-    .highlight-button,
-    .hero-btn,
-    .card-btn {
+    /* HERO */
+
+    #hero,
+    #hero--kontakt,
+    #hero--aktuelles {
+        padding: 4rem 0;
+    }
+
+    .hero-content{
+        margin-bottom: 2rem;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+        max-width: 80%;
+    }
+
+    .hero-slogan {
+        font-size: 0.95rem;
+    }
+
+    .hero-cta {
         width: 100%;
         text-align: center;
         box-sizing: border-box;
     }
 
-    .filter-controls {
-        gap: 0.4rem;
-    }
+    /* ABOUT */
 
-    .filter-controls label {
-        font-size: 0.9rem;
-        padding: 0.45rem 0.8rem;
+    #ueber-uns {
+        margin: 4rem auto;
     }
 
     .about-card {
+        padding: 1.25rem;
         padding: 1.5rem;
+    }
+
+    .highlight-number {
+        font-size: 3rem;
     }
 
     .highlight-line {
@@ -1502,168 +1623,39 @@ footer {
     .update-text p {
         font-size: 0.85rem;
     }
-}
 
-/* =========================================
-   DESKTOP NAV FIX
-========================================= */
+    /* ARBEIT */
 
-@media (min-width: 769px) {
-
-    #mobileNav {
-        display: flex;
-        align-items: center;
-        width: 100%;
+    .filter-controls {
+        gap: 0.4rem;
     }
 
-    #nav1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex: 1;
-        gap: 2rem;
+    .filter-controls label {
+        font-size: 0.9rem;
+        padding: 0.45rem 0.8rem;
+    }
+    
+    .arbeit-grid {
+        margin-inline: auto;
     }
 
-    #navbutton {
-        margin-left: auto;
+    .arbeit-content {
+        padding: 1rem;
     }
 
-}
-
-/* =========================================
-   MOBILE NAVIGATION
-========================================= */
-
-@media (max-width: 768px) {
-
-    .site-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 5%;
-        height: auto;
+    .arbeit h3 {
+        font-size: 1.1rem;
     }
 
-    .logo {
-        margin: 0;
+    /* FRAUEN */
+
+    .frau-content {
+        padding: 1.25rem;
     }
 
-    #hamburger {
-        display: flex;
-    }
-
-    #mobileNav {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 100%;
-        height: 100vh;
-        background: var(--background);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        transition: right 0.35s ease;
-        z-index: 1500;
-    }
-
-    #mobileNav.active {
-        right: 0;
-    }
-
-    #nav1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5rem;
-    }
-
-    .nav1 {
-        font-size: 1.2rem;
-    }
-
-    #navbutton {
-        margin-left: 0;
-        margin-top: 1rem;
-    }
-
-    /* HAMBURGER ANIMATION */
-
-    #hamburger.active span:nth-child(1) {
-        transform: rotate(45deg) translateY(11px);
-    }
-
-    #hamburger.active span:nth-child(2) {
-        opacity: 0;
-    }
-
-    #hamburger.active span:nth-child(3) {
-        transform: rotate(-45deg) translateY(-11px);
-    }
-}
-
-@media (max-width: 768px) {
-
-    #legal-page {
-        width: 90%;
-        margin: 4rem auto;
-    }
+    /* LEGAL */
 
     #legal-page h1 {
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
-
-}
-
-@media (max-width:768px) {
-    #ueber-uns,
-    #unsere-arbeit,
-    #unsere-frauen,
-    #aktuelles, 
-    #kontakt {
-        scroll-margin-top: 18rem;
-    }
-}
-
-@media (max-width:768px){
-
-    #aktuelles-main .post-card{
-        padding:1.4rem;
-    }
-
-    #aktuelles-main .post-card h3{
-        font-size:1.2rem;
-    }
-
-    #aktuelles-main .post-card-number{
-        font-size:1rem;
-    }
-
-}
-
-@media (max-width:768px){
-
-    .hero-small{
-        min-height:22rem;
-    }
-
-    .hero-small-content{
-        width:90%;
-    }
-
-}
-
-#aktuelles-main{
-    width:65%;
-    margin:6rem auto;
-}
-
-@media (max-width:768px){
-
-    #aktuelles-main{
-        width:92%;
-        margin:3rem auto;
-    }
-
 }
