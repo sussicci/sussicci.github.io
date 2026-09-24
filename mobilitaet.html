@@ -1,1 +1,743 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Frauen* für Miltenberg</title>
+</head>
 
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        
+        <!-- LOGO -->
+        <a href="index.html" class="logo-link">
+            <img class="logo" src="./logo.png" alt="Frauen* für Miltenberg Logo">
+        </a>    
+        
+        <!-- NAVIGATION -->
+        <nav id="mobileNav">
+            <ul id="nav1">
+                <li><a class="nav1" href="#ueber-uns">Über uns</a></li>
+                <li><a class="nav1" href="#unsere-arbeit">Unsere Arbeit</a></li>
+                <li><a class="nav1" href="#unsere-frauen">Unsere Frauen</a></li>
+                <li><a class="nav1" href="aktuelles.html">Aktuelles</a></li>
+            </ul>
+            <a id="navbutton" href="kontakt.html">Kontakt</a>
+        </nav>
+        
+        <!-- HAMBURGER -->
+        <button id="hamburger" aria-label="Menü öffnen">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </header> 
+
+    <main>
+    <!--HERO -->
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Miltenberg<span class="highlighted"> <br> mit Frauen</span> gestalten</h1>
+            <p class="hero-slogan">Wir sind „Frauen* für Miltenberg“ – eine Initiative für mehr Beteiligung, mehr Sichtbarkeit und mehr Einfluss von Frauen in der Kommunalpolitik.</p>
+            <a href="kontakt.html" class="hero-cta">Werde Teil der Initiative</a>
+        </div>
+    </section>
+    
+        <!--UNSERE ARBEIT -->
+
+    <section id="unsere-arbeit">
+        <div class="container">
+        
+        <h2>Unsere Arbeit</h2>
+        <p class="arbeit-intro">
+            Miltenberg und seine Umgebung sind bereits sehr lebenswerte Orte.
+            Gleichzeitig sehen wir viele Möglichkeiten, unsere Region noch
+            familienfreundlicher, nachhaltiger und attraktiver zu gestalten.
+            <br><br>
+            Hier stellen wir Ideen und Projekte vor, an denen unsere Arbeitsgruppen
+            bereits arbeiten – und weitere Vorhaben, die mit deinem Engagement
+            Realität werden können!
+        </p>
+
+        <!-- INPUTS -->
+        <input type="radio" name="filter" id="aktiv">
+        <input type="radio" name="filter" id="gesucht">
+        <input type="radio" name="filter" id="fertig">
+        <input type="radio" name="filter" id="all" checked>
+        <input type="radio" name="filter" id="familie">
+        <input type="radio" name="filter" id="stadtplanung">
+        <input type="radio" name="filter" id="bildung">
+        <input type="radio" name="filter" id="ökologie">
+        <input type="radio" name="filter" id="wirtschaft">
+        <input type="radio" name="filter" id="soziales">
+        <input type="radio" name="filter" id="mobilität">
+
+        <!-- FILTER BUTTONS (CSS ONLY) --> 
+        <div class="filter-controls">
+
+            <!-- obere Reihe -->
+            <div class="filter-top">
+                <label for="aktiv">Aktiv</label>
+                <label for="gesucht">Mitmacherinnen gesucht</label>
+                <label for="fertig">Umgesetzt</label>
+            </div>
+
+            <!-- untere Reihe -->
+            <div class="filter-bottom">
+                <label for="all">Alles</label>
+                <label for="familie">Familie</label>
+                <label for="stadtplanung">Stadtplanung</label>
+                <label for="bildung">Bildung</label>
+                <label for="wirtschaft">Wirtschaft</label>
+                <label for="mobilität">Mobilität</label>
+                <label for="soziales">Soziales</label>
+                <label for="ökologie">Ökologie</label>
+            </div>
+        </div>
+
+        <!-- ARBEIT GRID -->
+        <div class="arbeit-grid">
+
+            <article class="arbeit stadtplanung aktiv">    
+                <div class="status-badge aktiv">Aktiv</div>            
+                <img class="arbeit-image" src="./stadtpark.jpg" alt="Stadtpark" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Stadtpark beleben</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.</p>
+                    <a href="#" class="open-modal"
+                    data-title="Stadtpark beleben"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.">
+                    Mehr erfahren
+                    </a>
+                </div>
+            </article>
+
+            <article class="arbeit stadtplanung gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>            
+                <img class="arbeit-image" src="./Klostergarten.jpg" alt="Klostergarten" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Klostergarten beleben</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.</p>
+                    <a href="#" class="open-modal"
+                    data-title="Klostergarten beleben"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit stadtplanung gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="spielplatz.jpg" alt="Spielplatz" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Ausbau und Aufwertung von Spielplätzen für alle Altersgruppen</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt. <!--<br><br>Stichwörter: Beschattung, Wasserspielplatz, Miltenberg Nord, Jugend, Erwachsene, Senioren, Bolzplatz, Basketball, Volleyball, Fußball--></p>
+                    <a href="#" class="open-modal"
+                    data-title="Ausbau und Aufwertung von Spielplätzen für alle Altersgruppen"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit stadtplanung gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="spieltisch.jpg" alt="Spieltisch" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Begegnungsmöglichkeiten in allen Stadtteilen für alle Altersgruppen</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt. <!--<br><br> Stichwörter: Altes Bahnhofsgelände, Innenstadt mit z.B. Spieltische--></p>
+                    <a href="#" class="open-modal"
+                    data-title="Begegnungsmöglichkeiten in allen Stadtteilen für alle Altersgruppen"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt. ">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit stadtplanung gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="buergerhaus.jpg" alt="Bürgerhaus" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Bürgerhaus eröffnen</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt. <!--<br><br> Stichwörter: Amtsgericht - Treffpunkt für alle Altersgruppen--></p>
+                    <a href="#" class="open-modal"
+                    data-title="Bürgerhaus eröffnen"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt. ">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit stadtplanung gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="leerstand.jpg" alt="Öffentlicher Werkstadt" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Leerstandmanagement</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt. <!--<br><br> Stichwörter: Konzept für Einzelhandel (miete und mehrere Läden gleichzeitig), Offene Werkstatt (Zimmern, Schmiede, Töpfern, Nähen, Farbe, Musik), Freizeitbank, Second hand Laden Erwachsene, Bürgerhaus, Mo-Fri Familienzentrum, Regalmiete für Gründer*innen, Raum für den Jugend (selbstgestaltet), Ausstellung--></p>
+                    <a href="#" class="open-modal"
+                    data-title="Leerstandmanagement"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt. ">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit stadtplanung gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="grillplatz.jpg" alt="Grillplatz" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Schöne Aufenthaltsmöglichkeiten in der Innenstadt und Außerhalb</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt. <!--<br><br> Stichwörter:Nicht nur Konsum, Grillplätze, Strand--></p>
+                    <a href="#" class="open-modal"
+                    data-title="Schöne Aufenthaltsmöglichkeiten in der Innenstadt und Außerhalb"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt. ">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit stadtplanung aktiv">
+                <div class="status-badge aktiv">Aktiv</div>
+                <img class="arbeit-image" src="barfußpfad.jpg" alt="Barfußpfad" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Barfußpfad weiterentwickeln</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt. </p>
+                    <a href="#" class="open-modal"
+                    data-title="Barfußpfad weiterentwickeln"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt. ">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit wirtschaft gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="rundertisch.jpg" alt="Runder Tisch" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Runder Tisch für Unternehmen</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt. <!--<br><br> Stichwörter:Mit z.B. Thema Nachhaltigkeit, Personalversorgung, Teilzeitausbildung, Kultur der Gleichberechtigung fördern--></p>
+                    <a href="#" class="open-modal"
+                    data-title="Runder Tisch für Unternehmen"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit wirtschaft gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="boutiquehotel.jpg" alt="Boutique Hotel" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Tourismus: Boutique Hotel mit Spa</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt. </p>
+                    <a href="#" class="open-modal"
+                    data-title="Tourismus: Boutiquehotel mit Spa"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt. ">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit wirtschaft gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="gruenderinnen.jpg" alt="Gründer*innen" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Unterstützung für Gründer*innen</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt. <!--<br><br> Stichwörter:Attraktive Angebote z.B. regal mieten, oder Café und Verkauf kombiniert. --></p>
+                    <a href="#" class="open-modal"
+                    data-title="Unterstützung für Gründer*innen"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt. ">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit bildung gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="teilzeitausbildung.jpg" alt="Teilzeitausbildung" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Ausbildungsangebote in Teilzeit</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt. </p>
+                    <a href="#" class="open-modal"
+                    data-title="Teilzeitausbildungsangebote"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt. ">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit familie bildung gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="nachmittagsbetreuung.jpg" alt="Nachmittagsbetreuung" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Flexible Nachmittagsbetreuung</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt. </p>
+                    <a href="#" class="open-modal"
+                    data-title="Flexible Nachmittagsbetreuung"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt. ">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+        
+            <article class="arbeit familie gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="ferienbetreuung.jpg" alt="Ferienbetreuung" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Ferienbetreuung Kitas</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.</p>
+                    <a href="#" class="open-modal"
+                    data-title="Ferienbetreuung Kitas"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+        
+            <article class="arbeit familie gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="jugendraum.jpg" alt="Jugendraum" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Jugendraum selbstverwaltet von der Jugend</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.</p>
+                    <a href="#" class="open-modal"
+                    data-title="Jugendraum selbstverwaltet von der Jugend"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit familie gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="kreativeworkshop.jpg" alt="Kreative Workshop" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Kostengünstige Angebote für junge leute</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt. <!--<br><br> Stichwörter:z.B. Kreative Workshops--></p>
+                    <a href="#" class="open-modal"
+                    data-title="Kostengünstige Angebote für junge leute"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt. ">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit familie gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="schwimmkurs2.jpg" alt="Schwimmkurs" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Mehr Schwimmkurse ab 4 Jahre</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.</p>
+                    <a href="#" class="open-modal"
+                    data-title="Mehr Schwimmkurse ab 4 Jahre"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit familie gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="kitafinanzierung.jpg" alt="Finansierung Kitas" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Finanzielle Mittel für Personal in Kitas</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.</p>
+                    <a href="#" class="open-modal"
+                    data-title="Finanzielle Mittel für Personal in Kitas"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit familie aktiv">
+                <div class="status-badge aktiv">Aktiv</div>
+                <img class="arbeit-image" src="jugendbuehne.jpg" alt="Jugend Bühne" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Jugendliche eine Bühne geben</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt. </p>
+                    <a href="#" class="open-modal"
+                    data-title="Jugendliche eine Bühne geben"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit familie gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="hort.jpg" alt="Hort" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Hort</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.</p>
+                    <a href="#" class="open-modal"
+                    data-title="Hort"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit mobilität ökologie gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="dreizigkm.jpg" alt="30 km/h" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>30 km/h in Innenstadt</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.</p>
+                    <a href="#" class="open-modal"
+                    data-title="30 km/h in Innenstadt"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit mobilität ökologie wirtschaft gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="verbindung-ffm-mil.jpg" alt="Verbindung FFM - MIL" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Direkte Verbindung Miltenberg-Frankfurt am Main</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.</p>
+                    <a href="#" class="open-modal"
+                    data-title="Direkte Verbindung Miltenberg-Frankfurt am Main"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit mobilität ökologie gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="nahverkehr.jpg" alt="Nahverkehr" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Öffentlicher Nahverkehr erweitern</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt. <!--<br><br>Stichwörter: Vor allem abends & nachts--></p>
+                    <a href="#" class="open-modal"
+                    data-title="Öffentlicher Nahverkehr erweitern"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt. ">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit mobilität familie gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="barrierefreiheit.jpg" alt="Barrierefreiheit" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Barrierefreiheit</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.</p>
+                    <a href="#" class="open-modal"
+                    data-title="Barrierefreiheit"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit mobilität ökologie gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="./e-ladestation.jpg" alt="E-Ladestationen" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Ausbau E-Ladestationen</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.</p>
+                    <a href="#" class="open-modal"
+                    data-title="Ausbau E-Ladestationen"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit mobilität gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="fahrrad.jpg" alt="Sichere Fahrradwege" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Sichere Fahrradwege</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.</p>
+                    <a href="#" class="open-modal"
+                    data-title="Sichere Fahrradwege"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit mobilität ökologie gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="" alt="Die linke Mainbrückenabfahrt als Auffahrt für Fahrräder aufmachen" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Main-Brücke für Autos zumachen</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.</p>
+                    <a href="#" class="open-modal"
+                    data-title="Die linke Mainbrückenabfahrt als Auffahrt für Fahrräder aufmachen"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit ökologie gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="beschattung.jpg" alt="Beschattung" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Mehr Beschattung</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt. <!--<br><br> Stichwörter: Vorzugsweise natürliche Beschattung--></p>
+                    <a href="#" class="open-modal"
+                    data-title="Mehr Beschattung"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt. ">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit ökologie aktiv">
+                <div class="status-badge aktiv">Aktiv</div>
+                <img class="arbeit-image" src="./insektenfreundlich.jpg" alt="Insektenfreundliche Bepflanzung" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Insektenfreundliche Bepflanzung</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt. <!--<br><br> Stichwörter: Dächer begrünen, Nachhaltige Beetbepflanzungen--></p>
+                    <a href="#" class="open-modal"
+                    data-title="Insektenfreundliche Bepflanzung"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt. ">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit ökologie gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="klimafest.jpg" alt="Klimafeste Stadt" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Klimafeste Stadt</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.</p>
+                    <a href="#" class="open-modal"
+                    data-title="Klimafeste Stadt"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit ökologie gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="secondhand.jpg" alt="Second Hand Erwachsene" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Schöne Second Hand für Erwachsene</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.</p>
+                    <a href="#" class="open-modal"
+                    data-title="Schöne Second Hand für Erwachsene"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit ökologie gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="fundgrube.jpg" alt="Fundgrube Recyclinghof" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Fundgrube am Recyclinghof</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.</p>
+                    <a href="#" class="open-modal"
+                    data-title="Fundgrube am Recyclinghof"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit ökologie gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="freizeitbank.jpg" alt="Freizeitbank" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Freizeitbank</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt. <!--<br><br>Stichwörter: Gratis Verleih von Sportequipment bis zu Instrumente und Werkzeuge--></p>
+                    <a href="#" class="open-modal"
+                    data-title="Freizeitbank"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt. ">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit ökologie gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="ernaehrung.jpg" alt="Biolebensmittel in öffentliche Einrichtungen" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Nachhaltiges Essensangebot in Schulen und Kitas, inkl. konzept für Abfallverminderung</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.</p>
+                    <a href="#" class="open-modal"
+                    data-title="Nachhaltiges Essensangebot in Schulen und Kitas, inkl. konzept für Abfallverminderung"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit soziales gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="hygieneartikel.jpg" alt="Hygieneartikel" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Hygieneartikel auf öffentliche Toiletten</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.</p>
+                    <a href="#" class="open-modal"
+                    data-title="Hygieneartikel auf öffentliche Toiletten"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit soziales gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="wohnen.jpg" alt="Wohnraum" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Bezahlbarer Wohnraum</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.</p>
+                    <a href="#" class="open-modal"
+                    data-title="Bezahlbarer Wohnraum"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit soziales gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="" alt="Sozialausschuss" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Sozialausschuss im Stadtrat bilden</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.</p>
+                    <a href="#" class="open-modal"
+                    data-title="Sozialausschuss im Stadtrat bilden"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit soziales aktiv">
+                <div class="status-badge aktiv">Aktiv</div>
+                <img class="arbeit-image" src="safespace.png" alt="Safe Space" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Safe Space Messe</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.</p>
+                    <a href="#" class="open-modal"
+                    data-title="Safe Space Messe"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit soziales gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="integration.jpg" alt="Integration" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Integrative Angebote</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt. <!--<br><br>Stichwörter: Menschen mit Migrationshintergrund, Senior:innen, und Menschen mit Behinderungen, z.B. Integratives Café, Weihnachtsfeier, Kreativtreffen mit Kinder, Arbeitsplätze --></p>
+                    <a href="#" class="open-modal"
+                    data-title="Integrative Angebote"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit soziales gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="kunst.jpg" alt="Kultur" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Kunst & Kultur</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.</p>
+                    <a href="#" class="open-modal"
+                    data-title="Kunst & Kultur"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit soziales gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="nachbarschaftshilfe.jpg" alt="Nachbarschaftshilfe" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Nachbarschaftshilfe bekannter machen und/oder erweitern</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt. <!--<br><br> Stichwörter: z.B. Online-platform für Timesharing--></p>
+                    <a href="#" class="open-modal"
+                    data-title="Nachbarschaftshilfe bekannter machen und/oder erweitern"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt. ">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit soziales gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="buergerinfo.jpg" alt="Überblick" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Besseren Überblick über das, was in Miltenberg passiert</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.</p>
+                    <a href="#" class="open-modal"
+                    data-title="Besseren Überblick über das, was in Miltenberg passiert"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit soziales gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="altersarmut.jpg" alt="Altersarmut" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Altersarmut bei Frauen</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.</p>
+                    <a href="#" class="open-modal"
+                    data-title="Altersarmut bei Frauen"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+            <article class="arbeit soziales gesucht">
+                <div class="status-badge gesucht">Mitmacherinnen gesucht</div>
+                <img class="arbeit-image" src="frauengesundheit.jpg" alt="Frauengesundheit" loading="lazy">
+                <div class="arbeit-content">
+                    <h3>Frauengesundheit</h3>
+                    <p>Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.</p>
+                    <a href="#" class="open-modal"
+                    data-title="Frauengesundheit"
+                    data-text="Weitere Informationen zu diesem Thema folgen, sobald die inhaltliche Ausarbeitung beginnt.">
+                    Mehr erfahren</a>
+                </div>
+            </article>
+
+        </div>
+       <div class="load-more-container">
+            <button id="loadMoreBtn">Mehr anzeigen</button>
+            <button id="showLessBtn">Weniger anzeigen</button>
+        </div>
+    </div>
+    </section>
+        
+</main>   
+
+        
+<!-- MODAL -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <button id="closeModal">&times;</button>
+        <h2 id="modalTitle"></h2>
+        <img id="modalImage" src="" alt="" loading="lazy" />
+        <p id="modalText"></p>
+        <a href="kontakt.html" class="join-btn">Arbeitsgruppe unterstützen</a>
+    </div>
+</div>
+
+
+    <!--FOOTER -->
+
+    <footer>
+
+    <div class="footer-inner">
+
+        <div class="footer-col">
+            <h3>Kontakt</h3>
+            <p>Frauen* für Miltenberg</p>
+            <p>63897 Miltenberg</p>
+            <p>frauen.fuer.miltenberg (at) gmail.com</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="#ueber-uns">Über uns</a></li>
+                <li><a href="#unsere-arbeit">Unsere Arbeit</a></li>
+                <li><a href="#unsere-frauen">Unsere Frauen</a></li>
+                <li><a href="aktuelles.html">Aktuelles</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Rechtliches</h3>
+            <ul>
+                <li><a href="impressum.html">Impressum</a></li>
+                <li><a href="datenschutz.html">Datenschutz</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Frauen* für Miltenberg</p>
+    </div>
+
+</footer>
+<script src="script.js" defer></script>
+
+</body>
+</html>
