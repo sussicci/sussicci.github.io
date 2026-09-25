@@ -1815,10 +1815,6 @@ footer {
     background: var(--light);
 }
 
-.container .ag-focus-card {
-    width: 75%;
-}
-
 .ag-focus-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
