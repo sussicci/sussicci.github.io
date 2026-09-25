@@ -1726,7 +1726,7 @@ footer {
 }
 
 .ag-intro-text {
-    border-left: 4px solid var(--primary);
+    border-left: 4px solid var(--mobilitaet);
     padding-left: 1.5rem;
 }
 
@@ -1756,7 +1756,7 @@ footer {
 .ag-fact-number {
     font-size: 3rem;
     font-weight: 800;
-    color: var(--primary);
+    color: var(--moblitaet);
     margin-bottom: 1rem;
 }
 
@@ -1842,7 +1842,7 @@ footer {
 }
 
 .ag-focus-label {
-    color: var(--primary);
+    color: var(--mobilitaet);
     text-transform: uppercase;
     font-size: 0.75rem;
     font-weight: 800;
@@ -1870,7 +1870,7 @@ footer {
 }
 
 .ag-text-link {
-    color: var(--primary);
+    color: var(--mobilitaet);
     font-weight: 700;
 }
 
@@ -1941,7 +1941,7 @@ footer {
 
 .thema-category {
     display: inline-block;
-    color: var(--primary);
+    color: var(--mobilitaet);
     text-transform: uppercase;
     font-size: 0.7rem;
     font-weight: 800;
@@ -1966,7 +1966,7 @@ footer {
     background: transparent;
     padding: 0;
 
-    color: var(--primary);
+    color: var(--mobilitaet);
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: 700;
