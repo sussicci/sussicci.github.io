@@ -1881,6 +1881,9 @@ footer {
     color: var(--primary-dark);
 }
 
+#aktueller-schwerpunkt .card-btn {
+    background-color: var(--mobilitaet);
+}
 
 /* =========================================
    WEITERE THEMEN
