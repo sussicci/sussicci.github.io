@@ -1733,7 +1733,12 @@ footer {
     color: var(--white);
 }
 
-#hero--mobilitaet .hero-small-content h1 {
+#hero--mobilitaet,
+#hero--soziales,
+#hero--familie, 
+#hero--berufundbildung,
+#hero--oekologie,
+#hero--stadtplanung .hero-small-content h1 {
     margin-top: 0;
 }
 
@@ -1849,7 +1854,6 @@ footer {
     border-radius: 20px;
     padding: 2.5rem;
     box-shadow: 0 10px 30px rgba(15, 23, 42, 0.07);
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2095,6 +2099,7 @@ footer {
     height: 40px;
     border-radius: 50%;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 .themen-slider-btn-mobilitaet {
@@ -2121,15 +2126,21 @@ footer {
     background: var(--oekologie);
 }
 
-.themen-slider-btn {
-    flex-shrink: 0;
-}
-
-.themen-slider-btn.left {
+.themen-slider-btn-mobilitaet,
+.themen-slider-btn-soziales,
+.themen-slider-btn-familie,
+.themen-slider-btn-berufundbildung,
+.themen-slider-btn-stadtplanung,
+.themen-slider-btn-oekologie.left {
     left: -20px;
 }
 
-.themen-slider-btn.right {
+.themen-slider-btn-mobilitaet,
+.themen-slider-btn-soziales,
+.themen-slider-btn-familie,
+.themen-slider-btn-berufundbildung,
+.themen-slider-btn-stadtplanung,
+.themen-slider-btn-oekologie.right {
     right: -20px;
 }
 
@@ -2140,13 +2151,10 @@ footer {
 .ag-join {
     margin: 4rem auto 0;
     max-width: 700px;
-
     padding: 3rem;
     text-align: center;
-
     background: var(--white);
     border-radius: 20px;
-
     box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
 }
 
