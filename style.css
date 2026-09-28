@@ -2136,51 +2136,6 @@ footer {
     margin-bottom: 1.5rem;
 }
 
-.thema-more-mobilitaet,
-.thema-more-soziales,
-.thema-more-familie,
-.thema-more-oekologie,
-.thema-more-berufundbildung,
-.thema-more-stadtplanung {
-    border: none;
-    background: transparent;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    cursor: pointer;
-}
-
-.thema-more-mobilitaet {
-    color: var(--mobilitaet);
-}
-
-.thema-more-soziales {
-    color: var(--soziales);
-}
-
-.thema-more-familie {
-    color: var(--familie);
-}
-
-.thema-more-oekologie {
-    color: var(--oekologie);
-}
-
-.thema-more-berufundbildung {
-    color: var(--berufundbildung);
-}
-
-.thema-more-stadtplanung {
-    color: var(--stadtplanung);
-}
-
-.thema-more:hover {
-    color: var(--primary-dark);
-    text-decoration: underline;
-}
-
-
 /* Slider Pfeile */
 
 .themen-slider-btn-mobilitaet,
