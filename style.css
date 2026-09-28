@@ -43,7 +43,13 @@
     --gray: #475569;
     --muted: #64748b;
 
-    --mobilitaet: #285EB5;
+    --mobilitaet: #168AAD;
+    --oekologie: #40916C;
+    --soziales: #D65A6F;
+    --familie: #D9A441;
+    --berufundbildung: #457B9D;
+    --stadtplanung: #E07A3F;
+    
 
 }
 
@@ -1676,29 +1682,86 @@ footer {
 
 
 /* =========================================
-   AG MOBILITÄT
+   ARBEITSGRUPPEN
 ========================================= */
 
 /* HERO */
 
-#hero--ag {
+#hero--mobilitaet,
+#hero--oekologie,
+#hero--soziales,
+#hero--stadtplanung,
+#hero--familie,
+#hero--berufundbildung {
     min-height: 28rem;
     display: flex;
     align-items: center;
-    background:
-        linear-gradient(
-            rgba(15, 23, 42, 0.25),
-            rgba(15, 23, 42, 0.55)
-        ),
-        url("miltenberg.jpg");
-
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin: 0;
 }
 
-#hero--ag .hero-small-content {
+#hero--mobilitaet {
+    background:
+        linear-gradient(
+            rgba(15, 23, 42, 0.25),
+            rgba(15, 23, 42, 0.55)
+        ),
+        url("miltenberg.jpg");
+}
+
+#hero--oekologie {
+    background:
+        linear-gradient(
+            rgba(15, 23, 42, 0.25),
+            rgba(15, 23, 42, 0.55)
+        ),
+        url("miltenberg.jpg");
+}
+
+#hero--soziales {
+    background:
+        linear-gradient(
+            rgba(15, 23, 42, 0.25),
+            rgba(15, 23, 42, 0.55)
+        ),
+        url("miltenberg.jpg");
+}
+
+#hero--stadtplanung {
+    background:
+        linear-gradient(
+            rgba(15, 23, 42, 0.25),
+            rgba(15, 23, 42, 0.55)
+        ),
+        url("miltenberg.jpg");
+}
+
+#hero--familie {
+    background:
+        linear-gradient(
+            rgba(15, 23, 42, 0.25),
+            rgba(15, 23, 42, 0.55)
+        ),
+        url("miltenberg.jpg");
+}
+
+#hero--berufundbildung {
+    background:
+        linear-gradient(
+            rgba(15, 23, 42, 0.25),
+            rgba(15, 23, 42, 0.55)
+        ),
+        url("miltenberg.jpg");
+}
+
+#hero--mobilitaet,
+#hero--oekologie,
+#hero--soziales,
+#hero--stadtplanung,
+#hero--familie,
+#hero--berufundbildung .hero-small-content {
     padding: 4rem 0;
 }
 
@@ -1725,17 +1788,79 @@ footer {
     align-items: stretch;
 }
 
-.ag-intro-text {
-    border-left: 4px solid var(--mobilitaet);
+.ag-intro-text-mobilitaet,
+.ag-intro-text-soziales,
+.ag-intro-text-familie,
+.ag-intro-text-berufundbildung,
+.ag-intro-text-oekologie,
+.ag-intro-text-stadtplanung,
+{
     padding-left: 1.5rem;
 }
 
-.eyebrow-mobilitaet {
+.ag-intro-text-mobilitaet {
+    border-left: 4px solid var(--mobilitaet);
+}
+
+.ag-intro-text-mobilitaet {
+    border-left: 4px solid var(--mobilitaet);
+}
+
+.ag-intro-text-soziales {
+    border-left: 4px solid var(--mobilitaet);
+}
+
+.ag-intro-text-familie {
+    border-left: 4px solid var(--mobilitaet);
+}
+
+.ag-intro-text-berufundbildung {
+    border-left: 4px solid var(--mobilitaet);
+}
+
+.ag-intro-text-oekologie {
+    border-left: 4px solid var(--mobilitaet);
+}
+
+.ag-intro-text-stadtplanung {
+    border-left: 4px solid var(--mobilitaet);
+}
+
+.eyebrow-mobilitaet, 
+.eyebrow-oekologie,
+.eyebrow-soziales,
+.eyebrow-familie,
+.eyebrow-stadtplanung, 
+.eyebrow-berufundbildung, 
+{
     text-transform: uppercase;
     letter-spacing: 0.14em;
     font-size: 0.8rem;
     font-weight: 700;
+}
+
+.eyebrow-mobilitaet {
     color: var(--mobilitaet);
+}
+
+.eyebrow-oekologie {
+    color: var(--oekologie);
+}
+
+.eyebrow-soziales {
+    color: var(--soziales);
+}
+
+.eyebrow-familie {
+    color: var(--familie);
+}
+
+.eyebrow-berufundbildung {
+    color: var(--berufundbildung);
+}
+
+.eyebrow-stadtplanung {
+    color: var(--stadtplanung);
 }
 
 .ag-intro-text h2 {
@@ -1761,11 +1886,39 @@ footer {
     justify-content: center;
 }
 
-.ag-fact-number {
+.ag-fact-number-mobilitaet,
+.ag-fact-number-soziales,
+.ag-fact-number-familie,
+.ag-fact-number-berufundbiildung,
+.ag-fact-number-oekologie,
+.ag-fact-number-stadtplanung {
     font-size: 3rem;
     font-weight: 800;
-    color: var(--mobilitaet);
     margin-bottom: 1rem;
+}
+
+.ag-fact-number-mobilitaet {
+    color: var(--mobilitaet);
+}
+
+.ag-fact-number-soziales {
+    color: var(soziales);
+}
+
+.ag-fact-number-familie {
+    color: var(--familie);
+}
+
+.ag-fact-number-berufundbildung {
+    color: var(--berufundbildung);
+}
+
+.ag-fact-number-oekologie {
+    color: var(--oekologie);
+}
+
+.ag-fact-number-stadtplanung {
+    color: var(--stadtplanung);
 }
 
 .ag-fact-card h3 {
@@ -1777,7 +1930,6 @@ footer {
     color: var(--gray);
     line-height: 1.7;
 }
-
 
 /* =========================================
    SECTION HEADINGS
@@ -1805,7 +1957,6 @@ footer {
     font-size: 1.05rem;
 }
 
-
 /* =========================================
    AKTUELLER SCHWERPUNKT
 ========================================= */
@@ -1818,11 +1969,9 @@ footer {
 .ag-focus-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
     background: var(--white);
     border-radius: 24px;
     overflow: hidden;
-
     box-shadow: 0 15px 40px rgba(15, 23, 42, 0.08);
 }
 
@@ -1868,17 +2017,67 @@ footer {
     margin-top: 1.5rem;
 }
 
-.ag-text-link {
-    color: var(--mobilitaet);
+
+.ag-text-link-mobiltaet,
+.ag-text-link-soziales,
+.ag-text-link-oekologie,
+.ag-text-link-familie,
+.ag-text-link-stadtplanung,
+.ag-text-link-berufundbildung,
+{
     font-weight: 700;
+}
+
+.ag-text-link-mobiltaet {
+    color: var(--mobilitaet);
+}
+
+.ag-text-link-soziales {
+    color: var(--soziales);
+}
+
+.ag-text-link-oekologie {
+    color: var(--oekologie);
+}
+
+.ag-text-link-familie {
+    color: var(--familie);
+}
+
+.ag-text-link-stadtplanung {
+    color: var(--stadtplanung);
+}
+
+.ag-text-link-berufundbildung {
+    color: var(--berufundbildung);
 }
 
 .ag-text-link:hover {
     color: var(--primary-dark);
 }
 
-#aktueller-schwerpunkt .card-btn {
+#aktueller-schwerpunkt-mobilitaet .card-btn {
     background-color: var(--mobilitaet);
+}
+
+#aktueller-schwerpunkt-soziales .card-btn {
+    background-color: var(--soziales);
+}
+
+#aktueller-schwerpunkt-oekologie .card-btn {
+    background-color: var(--oekologie);
+}
+
+#aktueller-schwerpunkt-familie .card-btn {
+    background-color: var(--familie);
+}
+
+#aktueller-schwerpunkt-stadtplanung .card-btn {
+    background-color: var(--stadtplanung);
+}
+
+#aktueller-schwerpunkt-berufundbildung .card-btn {
+    background-color: var(--berufundbildung);
 }
 
 /* =========================================
@@ -1889,7 +2088,6 @@ footer {
     padding: 7rem 0;
     background: var(--background);
 }
-
 
 /* Slider */
 
@@ -1909,19 +2107,15 @@ footer {
     will-change: transform;
 }
 
-
 /* Einzelnes Thema */
 
 .thema {
     min-width: 100%;
-
     background: var(--light);
     border-radius: 20px;
     overflow: hidden;
-
     display: grid;
     grid-template-columns: 320px 1fr;
-
     position: relative;
 }
 
@@ -1946,17 +2140,43 @@ footer {
     margin-bottom: 1.5rem;
 }
 
-.thema-more {
+.thema-more-mobilitaet,
+.thema-more-soziales,
+.thema-more-familie,
+.thema-more-oekologie,
+.thema-more-berufundbildung,
+.thema-more-stadtplanung {
     border: none;
     background: transparent;
     padding: 0;
-
-    color: var(--mobilitaet);
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: 700;
-
     cursor: pointer;
+}
+
+.thema-more-mobilitaet {
+    color: var(--mobilitaet);
+}
+
+.thema-more-soziales {
+    color: var(--soziales);
+}
+
+.thema-more-familie {
+    color: var(--familie);
+}
+
+.thema-more-oekologie {
+    color: var(--oekologie);
+}
+
+.thema-more-berufundbildung {
+    color: var(--berufundbildung);
+}
+
+.thema-more-stadtplanung {
+    color: var(--stadtplanung);
 }
 
 .thema-more:hover {
@@ -2084,11 +2304,6 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .thema > img {
-        height: 240px;
-        min-height: 0;
-    }
-
     .thema-content {
         padding: 1.5rem;
     }
@@ -2133,10 +2348,6 @@ footer {
     .ag-focus-actions .card-btn {
         width: 100%;
         box-sizing: border-box;
-    }
-
-    .thema > img {
-        height: 200px;
     }
 
     .ag-join {
