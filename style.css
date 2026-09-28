@@ -1687,73 +1687,45 @@ footer {
 
 /* HERO */
 
-#hero--mobilitaet,
-#hero--oekologie,
-#hero--soziales,
-#hero--stadtplanung,
-#hero--familie,
+
+#hero--mobilitaet {
+    background: linear-gradient(rgba(15, 23, 42, 0.25), rgba(15, 23, 42, 0.55)), url("miltenberg.jpg");
+}
+
+#hero--oekologie {
+    background: linear-gradient(rgba(15, 23, 42, 0.25), rgba(15, 23, 42, 0.55)), url("miltenberg.jpg");
+}
+
+#hero--soziales {
+    background: linear-gradient(rgba(15, 23, 42, 0.25), rgba(15, 23, 42, 0.55)), url("miltenberg.jpg");
+}
+
+#hero--stadtplanung {
+    background: linear-gradient(rgba(15, 23, 42, 0.25), rgba(15, 23, 42, 0.55)), url("miltenberg.jpg");
+}
+
+#hero--familie {
+    background: linear-gradient(rgba(15, 23, 42, 0.25), rgba(15, 23, 42, 0.55)), url("miltenberg.jpg");
+}
+
 #hero--berufundbildung {
-    min-height: 28rem;
+    background:
+        linear-gradient(rgba(15, 23, 42, 0.25), rgba(15, 23, 42, 0.55)), url("miltenberg.jpg");
+}
+
+#hero--mobilitaet,
+#hero--soziales,
+#hero--familie, 
+#hero--berufundbildung,
+#hero--oekologie,
+#hero--stadtplanung {
     display: flex;
     align-items: center;
+    min-height: 28rem;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin: 0;
-}
-
-#hero--mobilitaet {
-    background:
-        linear-gradient(
-            rgba(15, 23, 42, 0.25),
-            rgba(15, 23, 42, 0.55)
-        ),
-        url("miltenberg.jpg");
-}
-
-#hero--oekologie {
-    background:
-        linear-gradient(
-            rgba(15, 23, 42, 0.25),
-            rgba(15, 23, 42, 0.55)
-        ),
-        url("miltenberg.jpg");
-}
-
-#hero--soziales {
-    background:
-        linear-gradient(
-            rgba(15, 23, 42, 0.25),
-            rgba(15, 23, 42, 0.55)
-        ),
-        url("miltenberg.jpg");
-}
-
-#hero--stadtplanung {
-    background:
-        linear-gradient(
-            rgba(15, 23, 42, 0.25),
-            rgba(15, 23, 42, 0.55)
-        ),
-        url("miltenberg.jpg");
-}
-
-#hero--familie {
-    background:
-        linear-gradient(
-            rgba(15, 23, 42, 0.25),
-            rgba(15, 23, 42, 0.55)
-        ),
-        url("miltenberg.jpg");
-}
-
-#hero--berufundbildung {
-    background:
-        linear-gradient(
-            rgba(15, 23, 42, 0.25),
-            rgba(15, 23, 42, 0.55)
-        ),
-        url("miltenberg.jpg");
 }
 
 #hero--mobilitaet,
@@ -1770,7 +1742,6 @@ footer {
     color: var(--white);
     margin-bottom: 1rem;
 }
-
 
 /* =========================================
    AG INTRO
