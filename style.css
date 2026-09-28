@@ -1728,15 +1728,6 @@ footer {
     margin: 0;
 }
 
-#hero--mobilitaet,
-#hero--oekologie,
-#hero--soziales,
-#hero--stadtplanung,
-#hero--familie,
-#hero--berufundbildung .hero-small-content {
-    padding: 4rem 0;
-}
-
 .ag-eyebrow {
     display: block;
     color: var(--white);
