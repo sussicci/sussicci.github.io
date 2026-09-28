@@ -2013,45 +2013,6 @@ footer {
     margin-top: 1.5rem;
 }
 
-
-.ag-text-link-mobiltaet,
-.ag-text-link-soziales,
-.ag-text-link-oekologie,
-.ag-text-link-familie,
-.ag-text-link-stadtplanung,
-.ag-text-link-berufundbildung,
-{
-    font-weight: 700;
-}
-
-.ag-text-link-mobiltaet {
-    color: var(--mobilitaet);
-}
-
-.ag-text-link-soziales {
-    color: var(--soziales);
-}
-
-.ag-text-link-oekologie {
-    color: var(--oekologie);
-}
-
-.ag-text-link-familie {
-    color: var(--familie);
-}
-
-.ag-text-link-stadtplanung {
-    color: var(--stadtplanung);
-}
-
-.ag-text-link-berufundbildung {
-    color: var(--berufundbildung);
-}
-
-.ag-text-link:hover {
-    color: var(--primary-dark);
-}
-
 #aktueller-schwerpunkt-mobilitaet .card-btn {
     background-color: var(--mobilitaet);
 }
