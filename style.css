@@ -1868,7 +1868,7 @@ footer {
 }
 
 .ag-fact-number-soziales {
-    color: var(soziales);
+    color: var(--soziales);
 }
 
 .ag-fact-number-familie {
