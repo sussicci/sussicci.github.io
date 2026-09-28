@@ -1802,28 +1802,24 @@ footer {
     border-left: 4px solid var(--mobilitaet);
 }
 
-.ag-intro-text-mobilitaet {
-    border-left: 4px solid var(--mobilitaet);
-}
-
 .ag-intro-text-soziales {
-    border-left: 4px solid var(--mobilitaet);
+    border-left: 4px solid var(--soziales);
 }
 
 .ag-intro-text-familie {
-    border-left: 4px solid var(--mobilitaet);
+    border-left: 4px solid var(--familie);
 }
 
 .ag-intro-text-berufundbildung {
-    border-left: 4px solid var(--mobilitaet);
+    border-left: 4px solid var(--berufundbildung);
 }
 
 .ag-intro-text-oekologie {
-    border-left: 4px solid var(--mobilitaet);
+    border-left: 4px solid var(--oekologie);
 }
 
 .ag-intro-text-stadtplanung {
-    border-left: 4px solid var(--mobilitaet);
+    border-left: 4px solid var(--stadtplanung);
 }
 
 .eyebrow-mobilitaet, 
