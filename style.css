@@ -1822,7 +1822,12 @@ footer {
     color: var(--stadtplanung);
 }
 
-.ag-intro-text h2 {
+.ag-intro-text-mobilitaet,
+.ag-intro-text-soziales,
+.ag-intro-text-familie,
+.ag-intro-text-berufundbildung,
+.ag-intro-text-oekologie,
+.ag-intro-text-stadtplanung h2 {
     margin-top: 0.8rem;
     margin-bottom: 2rem;
 }
