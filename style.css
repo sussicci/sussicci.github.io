@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('./Montserrat-Medium.ttf') format('truetype');
+    src: url('./Montserrat-Medium.ttf') format('truetype');Fag
     font-weight: 500;
 }
 
@@ -1823,13 +1823,18 @@ footer {
     margin-bottom: 2rem;
 }
 
-.ag-intro-text p {
+.ag-intro-text-mobilitaet,
+.ag-intro-text-soziales,
+.ag-intro-text-familie,
+.ag-intro-text-berufundbildung,
+.ag-intro-text-oekologie,
+.ag-intro-text-stadtplanung p {
     max-width: 850px;
     font-size: 1.1rem;
     line-height: 1.9;
     color: var(--gray);
 }
-
+    
 .ag-fact-card {
     background: var(--white);
     border-radius: 20px;
