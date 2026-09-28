@@ -2187,18 +2187,61 @@ footer {
 
 /* Slider Pfeile */
 
-.themen-wrapper .themen-slider-btn {
+.themen-slider-btn-mobilitaet,
+.themen-slider-btn-soziales,
+.themen-slider-btn-familie,
+.themen-slider-btn-berufundbildung,
+.themen-slider-btn-stadtplanung,
+.themen-slider-btn-oekologie,
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.themen-slider-btn-mobilitaet {
+    background: var(--mobilitaet);
+}
+
+.themen-slider-btn-soziales {
+    background: var(--soziales);
+}
+
+.themen-slider-btn-familie {
+    background: var(--familie);
+}
+
+.themen-slider-btn-berufundbildung {
+    background: var(--berufundbildung);
+}
+
+.themen-slider-btn-stadtplanung {
+    background: var(--stadtplanung);
+}
+
+.themen-slider-btn-oekologie {
+    background: var(--oekologie);
+}
+
+.themen-slider-btn {
     flex-shrink: 0;
 }
 
-.themen-wrapper .themen-slider-btn.left {
+.themen-slider-btn.left {
     left: -20px;
 }
 
-.themen-wrapper .themen-slider-btn.right {
+.themen-slider-btn.right {
     right: -20px;
 }
-
 
 /* =========================================
    MITMACHEN
