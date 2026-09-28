@@ -1797,8 +1797,7 @@ footer {
 .eyebrow-soziales,
 .eyebrow-familie,
 .eyebrow-stadtplanung, 
-.eyebrow-berufundbildung, 
-{
+.eyebrow-berufundbildung {
     text-transform: uppercase;
     letter-spacing: 0.14em;
     font-size: 0.8rem;
@@ -2074,8 +2073,7 @@ footer {
 .themen-slider-btn-familie,
 .themen-slider-btn-berufundbildung,
 .themen-slider-btn-stadtplanung,
-.themen-slider-btn-oekologie,
-{
+.themen-slider-btn-oekologie {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
