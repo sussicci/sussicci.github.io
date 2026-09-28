@@ -1733,6 +1733,10 @@ footer {
     color: var(--white);
 }
 
+#hero--mobilitaet .hero-small-content h1 {
+    margin-top: 0;
+}
+
 /* =========================================
    AG INTRO
 ========================================= */
