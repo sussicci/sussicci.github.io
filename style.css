@@ -1983,27 +1983,33 @@ footer {
 }
 
 #aktueller-schwerpunkt-mobilitaet .card-btn {
-    background-color: var(--mobilitaet);
+    background-color: var(--mobilitaet)
+    border: 2px solid var(--mobilitaet);
 }
 
 #aktueller-schwerpunkt-soziales .card-btn {
-    background-color: var(--soziales);
+    background-color: var(--soziales)
+    border: 2px solid var(--soziales);
 }
 
 #aktueller-schwerpunkt-oekologie .card-btn {
-    background-color: var(--oekologie);
+    background-color: var(--oekologie)
+    border: 2px solid var(--oekologie);
 }
 
 #aktueller-schwerpunkt-familie .card-btn {
-    background-color: var(--familie);
+    background-color: var(--familie)
+    border: 2px solid var(--familie);
 }
 
 #aktueller-schwerpunkt-stadtplanung .card-btn {
-    background-color: var(--stadtplanung);
+    background-color: var(--stadtplanung)
+    border: 2px solid var(--stadtplanung);
 }
 
 #aktueller-schwerpunkt-berufundbildung .card-btn {
-    background-color: var(--berufundbildung);
+    background-color: var(--berufundbildung)
+    border: 2px solid var(--berufundbildung);
 }
 
 /* =========================================
