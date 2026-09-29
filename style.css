@@ -556,66 +556,6 @@ nav {
     position: relative;
 }
 
-/* FILTER BUTTONS */
-
-.filter-controls {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin: 2rem auto;
-}
-
-.filter-top,
-.filter-bottom {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.8rem;
-    justify-content: center;
-    width: 100%;
-}
-
-/* Radio verstecken */
-input[type="radio"] {
-    display: none;
-}
-
-/* AKTIVER FILTER */
-
-#aktiv:checked ~ .filter-controls label[for="aktiv"],
-#gesucht:checked ~ .filter-controls label[for="gesucht"],
-#fertig:checked ~ .filter-controls label[for="fertig"],
-#all:checked ~ .filter-controls label[for="all"],
-#familie:checked ~ .filter-controls label[for="familie"],
-#stadtplanung:checked ~ .filter-controls label[for="stadtplanung"],
-#bildung:checked ~ .filter-controls label[for="bildung"],
-#wirtschaft:checked ~ .filter-controls label[for="wirtschaft"],
-#mobilität:checked ~ .filter-controls label[for="mobilität"],
-#soziales:checked ~ .filter-controls label[for="soziales"],
-#ökologie:checked ~ .filter-controls label[for="ökologie"] {
-
-    background-color: #7B2CBF;
-    border-color: #7B2CBF;
-    color: #ffffff;
-}
-
-/* Labels als Buttons */
-.filter-controls label {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    margin: 0rem;
-    border: 2px solid #7B2CBF;
-    color: #0F172A;
-    border-radius: 2rem;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.filter-controls label:hover {
-    background-color: #7B2CBF;
-    color: #F8FAFC;
-}
-
 /* STATUS */
 
 .status-badge {
