@@ -32,8 +32,14 @@ document.addEventListener("DOMContentLoaded", () => {
     COUNTER ANIMATION
     ========================= */
 
+    /* =========================
+   COUNTER ANIMATION
+========================= */
+
     const counter = document.getElementById("counter");
     const highlightSection = document.querySelector(".about-highlight");
+
+if (counter && highlightSection) {
 
     let counterStarted = false;
 
@@ -66,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (entry.isIntersecting && !counterStarted) {
 
                 counterStarted = true;
-                animateCounter(65);
+                animateCounter(70);
             }
         });
 
@@ -316,4 +322,57 @@ document.addEventListener("DOMContentLoaded", () => {
         clearInterval(interval); 
         interval = setInterval(nextSlide, 3000);
     }
+
+/* =========================
+   AG MOBILITÄT SLIDER
+========================= */
+
+const themenSlider = document.querySelector(".themen-slider");
+const themenSlides = document.querySelectorAll(".thema");
+const themenPrev = document.getElementById("themenPrev");
+const themenNext = document.getElementById("themenNext");
+
+if (
+    themenSlider &&
+    themenSlides.length > 0 &&
+    themenPrev &&
+    themenNext
+) {
+
+    let themenIndex = 0;
+    const themenTotal = themenSlides.length;
+
+    function updateThemenSlider() {
+
+        themenSlider.style.transform =
+            `translateX(-${themenIndex * 100}%)`;
+
+    }
+
+    function nextThema() {
+
+        themenIndex++;
+
+        if (themenIndex >= themenTotal) {
+            themenIndex = 0;
+        }
+
+        updateThemenSlider();
+    }
+
+    function prevThema() {
+
+        themenIndex--;
+
+        if (themenIndex < 0) {
+            themenIndex = themenTotal - 1;
+        }
+
+        updateThemenSlider();
+    }
+
+    themenNext.addEventListener("click", nextThema);
+    themenPrev.addEventListener("click", prevThema);
+
+}
 }); 
