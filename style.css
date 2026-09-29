@@ -1709,24 +1709,68 @@ footer {
 }
 
 #hero--oekologie {
-    background: linear-gradient(rgba(15, 23, 42, 0.25), rgba(15, 23, 42, 0.55)), url("miltenberg.jpg");
+    background-image:
+        linear-gradient(
+            to right,
+            var(--oekologie) 0%,
+            rgba(64, 145, 108, 0.95) 30%,
+            rgba(64, 145, 108, 0.8) 55%,
+            rgba(64, 145, 108, 0.45) 80%,
+            transparent 100%
+        ),
+        url("miltenberg.jpg");
 }
 
 #hero--soziales {
-    background: linear-gradient(rgba(15, 23, 42, 0.25), rgba(15, 23, 42, 0.55)), url("miltenberg.jpg");
+    background: 
+        linear-gradient(
+            to right,
+            var(--soziales) 0%,
+            rgba(214, 90, 111, 0.95) 30%,
+            rgba(214, 90, 111, 0.8) 55%,
+            rgba(214, 90, 111, 0.45) 80%,
+            transparent 100%
+        ),
+        url("miltenberg.jpg");
 }
 
 #hero--stadtplanung {
-    background: linear-gradient(rgba(15, 23, 42, 0.25), rgba(15, 23, 42, 0.55)), url("miltenberg.jpg");
+    background-image:
+        linear-gradient(
+            to right,
+            var(--stadtplanung) 0%,
+            rgba(224, 122, 63, 0.95) 30%,
+            rgba(224, 122, 63, 0.8) 55%,
+            rgba(224, 122, 63, 0.45) 80%,
+            transparent 100%
+        ),
+        url("miltenberg.jpg");
 }
 
 #hero--familie {
-    background: linear-gradient(rgba(15, 23, 42, 0.25), rgba(15, 23, 42, 0.55)), url("miltenberg.jpg");
+    background-image:
+        linear-gradient(
+            to right,
+            var(--familie) 0%,
+            rgba(217, 164, 65, 0.95) 30%,
+            rgba(217, 164, 65, 0.8) 55%,
+            rgba(217, 164, 65, 0.45) 80%,
+            transparent 100%
+        ),
+        url("miltenberg.jpg");
 }
 
 #hero--berufundbildung {
-    background:
-        linear-gradient(rgba(15, 23, 42, 0.25), rgba(15, 23, 42, 0.55)), url("miltenberg.jpg");
+    background-image:
+        linear-gradient(
+            to right,
+            var(--berufundbildung) 0%,
+            rgba(69, 123, 157, 0.95) 30%,
+            rgba(69, 123, 157, 0.8) 55%,
+            rgba(69, 123, 157, 0.45) 80%,
+            transparent 100%
+        ),
+        url("miltenberg.jpg");
 }
 
 #hero--mobilitaet,
