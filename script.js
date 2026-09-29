@@ -162,6 +162,7 @@ if (counter && highlightSection) {
     });
 
     observer.observe(highlightSection);
+    }
 
     /*========================= 
         UNSERE ARBEIT
@@ -171,6 +172,8 @@ if (counter && highlightSection) {
     const showLessBtn = document.getElementById("showLessBtn");
     const filters = document.querySelectorAll('input[name="filter"]');
 
+if (allItems.length && button && showLessBtn) {
+    
     let activeFilter = "all";
         let page = 1;
 
@@ -284,7 +287,7 @@ if (counter && highlightSection) {
     // INIT
     updateDisplay();
 
-    
+}
     /*=========================
     MODAL
     =========================*/
@@ -297,6 +300,7 @@ if (counter && highlightSection) {
     const openButtons = document.querySelectorAll(".open-modal");
     const closeModal = document.getElementById("closeModal");
 
+    if (modal && closeModal) {
 
     openButtons.forEach(button => {
 
@@ -343,6 +347,7 @@ if (counter && highlightSection) {
 
     });
 
+    }
 /*========================= 
         FRAUEN SLIDER 
 =========================*/ 
@@ -351,6 +356,8 @@ if (counter && highlightSection) {
     const slides = document.querySelectorAll(".frau"); 
     const next = document.querySelector(".slider-btn.right"); 
     const prev = document.querySelector(".slider-btn.left"); 
+
+if (slider && slides.length && next && prev) {
     
     let index = 0; 
     const total = slides.length; 
@@ -405,3 +412,5 @@ if (counter && highlightSection) {
     }
 
 }); 
+
+}
