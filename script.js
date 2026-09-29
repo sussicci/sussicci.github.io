@@ -27,6 +27,88 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
     });
+
+/* =========================
+   AG MOBILITÄT SLIDER
+========================= */
+
+const themenSlider = document.querySelector(".themen-slider");
+const themenSlides = document.querySelectorAll(".thema");
+const themenPrev = document.getElementById("themenPrev");
+const themenNext = document.getElementById("themenNext");
+
+if (
+    themenSlider &&
+    themenSlides.length > 0 &&
+    themenPrev &&
+    themenNext
+) {
+
+    let themenIndex = 0;
+    const themenTotal = themenSlides.length;
+
+    function updateThemenSlider() {
+
+        themenSlider.style.transform =
+            `translateX(-${themenIndex * 100}%)`;
+
+    }
+
+    function nextThema() {
+
+        themenIndex++;
+
+        if (themenIndex >= themenTotal) {
+            themenIndex = 0;
+        }
+
+        updateThemenSlider();
+    }
+
+    function prevThema() {
+
+        themenIndex--;
+
+        if (themenIndex < 0) {
+            themenIndex = themenTotal - 1;
+        }
+
+        updateThemenSlider();
+    }
+
+    themenNext.addEventListener("click", nextThema);
+    themenPrev.addEventListener("click", prevThema);
+
+/* =========================
+   TOUCH SWIPE
+========================= */
+
+let touchStartX = 0;
+let touchEndX = 0;
+
+themenSlider.addEventListener("touchstart", (e) => {
+
+    touchStartX = e.changedTouches[0].screenX;
+
+}, { passive: true });
+
+
+themenSlider.addEventListener("touchend", (e) => {
+
+    touchEndX = e.changedTouches[0].screenX;
+
+    const distance = touchEndX - touchStartX;
+
+    if (Math.abs(distance) < 50) {
+        return;
+    }
+
+    if (distance < 0) {
+        nextThema();
+    } else {
+        prevThema();
+    }
+
     
     /* =========================
    COUNTER ANIMATION
@@ -317,87 +399,6 @@ if (counter && highlightSection) {
     function resetAuto() { 
         clearInterval(interval); 
         interval = setInterval(nextSlide, 3000);
-    }
-
-/* =========================
-   AG MOBILITÄT SLIDER
-========================= */
-
-const themenSlider = document.querySelector(".themen-slider");
-const themenSlides = document.querySelectorAll(".thema");
-const themenPrev = document.getElementById("themenPrev");
-const themenNext = document.getElementById("themenNext");
-
-if (
-    themenSlider &&
-    themenSlides.length > 0 &&
-    themenPrev &&
-    themenNext
-) {
-
-    let themenIndex = 0;
-    const themenTotal = themenSlides.length;
-
-    function updateThemenSlider() {
-
-        themenSlider.style.transform =
-            `translateX(-${themenIndex * 100}%)`;
-
-    }
-
-    function nextThema() {
-
-        themenIndex++;
-
-        if (themenIndex >= themenTotal) {
-            themenIndex = 0;
-        }
-
-        updateThemenSlider();
-    }
-
-    function prevThema() {
-
-        themenIndex--;
-
-        if (themenIndex < 0) {
-            themenIndex = themenTotal - 1;
-        }
-
-        updateThemenSlider();
-    }
-
-    themenNext.addEventListener("click", nextThema);
-    themenPrev.addEventListener("click", prevThema);
-
-/* =========================
-   TOUCH SWIPE
-========================= */
-
-let touchStartX = 0;
-let touchEndX = 0;
-
-themenSlider.addEventListener("touchstart", (e) => {
-
-    touchStartX = e.changedTouches[0].screenX;
-
-}, { passive: true });
-
-
-themenSlider.addEventListener("touchend", (e) => {
-
-    touchEndX = e.changedTouches[0].screenX;
-
-    const distance = touchEndX - touchStartX;
-
-    if (Math.abs(distance) < 50) {
-        return;
-    }
-
-    if (distance < 0) {
-        nextThema();
-    } else {
-        prevThema();
     }
 
 }); 
