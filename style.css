@@ -1700,11 +1700,11 @@ footer {
     background:
         linear-gradient(
             to right,
-            rgba(22, 138, 173, 0.95) 0%,
-            rgba(22, 138, 173, 0.7) 30%,
-            rgba(22, 138, 173, 0.3) 60%,
-            rgba(22, 138, 173, 0) 100%
-        ),
+            var(--mobilitaet) 0%,
+            rgba(22, 138, 173, 0.95) 25%,
+            rgba(22, 138, 173, 0.75) 50%,
+            rgba(22, 138, 173, 0.35) 75%,
+            transparent 100%),
         url("miltenberg.jpg");
 }
 
