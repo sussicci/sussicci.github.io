@@ -190,8 +190,30 @@ if (
         updateThemenSlider();
     }
 
-    themenNext.addEventListener("click", nextThema);
-    themenPrev.addEventListener("click", prevThema);
+    let themenInterval = setInterval(nextThema, 5000);
+
+    function resetThemenAuto() {
+    clearInterval(themenInterval);
+    themenInterval = setInterval(nextThema, 5000);
+}
+    
+    themenNext.addEventListener("click", () => {
+    nextThema();
+    resetThemenAuto();
+});
+
+themenPrev.addEventListener("click", () => {
+    prevThema();
+    resetThemenAuto();
+});
+
+themenSlider.addEventListener("mouseenter", () => {
+    clearInterval(themenInterval);
+});
+
+themenSlider.addEventListener("mouseleave", () => {
+    themenInterval = setInterval(nextThema, 5000);
+});
 
 /* =========================
    TOUCH SWIPE
@@ -214,6 +236,7 @@ themenSlider.addEventListener("touchend", (e) => {
     const distance = touchEndX - touchStartX;
 
     if (Math.abs(distance) < 50) {
+        resetThemenAuto();
         return;
     }
 
@@ -222,6 +245,8 @@ themenSlider.addEventListener("touchend", (e) => {
     } else {
         prevThema();
     }
+
+    resetThemenAuto();
 
 }, { passive: true });
 
