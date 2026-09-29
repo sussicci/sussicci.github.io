@@ -109,6 +109,9 @@ themenSlider.addEventListener("touchend", (e) => {
         prevThema();
     }
 
+    });
+
+}
     
     /* =========================
    COUNTER ANIMATION
