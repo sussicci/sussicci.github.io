@@ -1700,8 +1700,8 @@ footer {
     background:
         linear-gradient(
             to right,
-            var(--mobilitaet) 0%,
-            rgba(22, 138, 173, 0.75) 30%,
+            rgba(22, 138, 173, 0.95) 0%,
+            rgba(22, 138, 173, 0.7) 30%,
             rgba(22, 138, 173, 0.3) 60%,
             rgba(22, 138, 173, 0) 100%
         ),
