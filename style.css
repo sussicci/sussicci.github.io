@@ -2329,7 +2329,12 @@ footer {
         font-size: 1.3rem;
     }
 
-    .themen-wrapper .themen-slider-btn {
+    .themen-wrapper .themen-slider-btn-mobilitaet,
+    .themen-wrapper .themen-slider-btn-oekologie,
+    .themen-wrapper .themen-slider-btn-stadtplanung,
+    .themen-wrapper .themen-slider-btn-familie,
+    .themen-wrapper .themen-slider-btn-soziales,
+    .themen-wrapper .themen-slider-btn-berufundbildung {
         display: none;
     }
 
