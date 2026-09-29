@@ -1755,7 +1755,7 @@ footer {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 5rem;
-    align-items: stretch;
+    align-items: center;
 }
 
 .ag-intro-text-mobilitaet,
