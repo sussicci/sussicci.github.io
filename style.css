@@ -1733,11 +1733,11 @@ footer {
     color: var(--white);
 }
 
-#hero--mobilitaet,
-#hero--soziales,
-#hero--familie, 
-#hero--berufundbildung,
-#hero--oekologie,
+#hero--mobilitaet .hero-small-content h1,
+#hero--soziales .hero-small-content h1,
+#hero--familie .hero-small-content h1, 
+#hero--berufundbildung .hero-small-content h1,
+#hero--oekologie .hero-small-content h1,
 #hero--stadtplanung .hero-small-content h1 {
     margin-top: 0;
 }
@@ -1827,21 +1827,21 @@ footer {
     color: var(--stadtplanung);
 }
 
-.ag-intro-text-mobilitaet,
-.ag-intro-text-soziales,
-.ag-intro-text-familie,
-.ag-intro-text-berufundbildung,
-.ag-intro-text-oekologie,
+.ag-intro-text-mobilitaet h2,
+.ag-intro-text-soziales h2,
+.ag-intro-text-familie h2,
+.ag-intro-text-berufundbildung h2,
+.ag-intro-text-oekologie h2,
 .ag-intro-text-stadtplanung h2 {
     margin-top: 0.8rem;
     margin-bottom: 2rem;
 }
 
-.ag-intro-text-mobilitaet,
-.ag-intro-text-soziales,
-.ag-intro-text-familie,
-.ag-intro-text-berufundbildung,
-.ag-intro-text-oekologie,
+.ag-intro-text-mobilitaet p,
+.ag-intro-text-soziales p,
+.ag-intro-text-familie p,
+.ag-intro-text-berufundbildung p,
+.ag-intro-text-oekologie p,
 .ag-intro-text-stadtplanung p {
     max-width: 850px;
     font-size: 1.05rem;
@@ -2126,20 +2126,20 @@ footer {
     background: var(--oekologie);
 }
 
-.themen-slider-btn-mobilitaet,
-.themen-slider-btn-soziales,
-.themen-slider-btn-familie,
-.themen-slider-btn-berufundbildung,
-.themen-slider-btn-stadtplanung,
+.themen-slider-btn-mobilitaet.left,
+.themen-slider-btn-soziales.left,
+.themen-slider-btn-familie.left,
+.themen-slider-btn-berufundbildung.left,
+.themen-slider-btn-stadtplanung.left,
 .themen-slider-btn-oekologie.left {
     left: -20px;
 }
 
-.themen-slider-btn-mobilitaet,
-.themen-slider-btn-soziales,
-.themen-slider-btn-familie,
-.themen-slider-btn-berufundbildung,
-.themen-slider-btn-stadtplanung,
+.themen-slider-btn-mobilitaet.right,
+.themen-slider-btn-soziales.right,
+.themen-slider-btn-familie.right,
+.themen-slider-btn-berufundbildung.right,
+.themen-slider-btn-stadtplanung.right,
 .themen-slider-btn-oekologie.right {
     right: -20px;
 }
