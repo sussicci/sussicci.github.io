@@ -140,9 +140,7 @@ if (slider && slides.length && next && prev) {
     function resetAuto() { 
         clearInterval(interval); 
         interval = setInterval(nextSlide, 3000);
-    }
-
-}); 
+    } 
 
 /* =========================
    AG MOBILITÄT SLIDER
