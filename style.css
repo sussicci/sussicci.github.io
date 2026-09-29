@@ -1692,8 +1692,20 @@ footer {
 /* HERO */
 
 
-#hero--mobilitaet {
+/*#hero--mobilitaet {
     background: linear-gradient(rgba(15, 23, 42, 0.25), rgba(15, 23, 42, 0.55)), url("miltenberg.jpg");
+}*/
+
+#hero--mobilitaet {
+    background:
+        linear-gradient(
+            to right,
+            var(--mobilitaet) 0%,
+            rgba(22, 138, 173, 0.75) 30%,
+            rgba(22, 138, 173, 0.3) 60%,
+            rgba(22, 138, 173, 0) 100%
+        ),
+        url("miltenberg.jpg");
 }
 
 #hero--oekologie {
