@@ -252,4 +252,4 @@ themenSlider.addEventListener("touchend", (e) => {
 
 } 
 
-};
+});
