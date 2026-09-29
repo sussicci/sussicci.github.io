@@ -29,10 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     
     /* =========================
-    COUNTER ANIMATION
-    ========================= */
-
-    /* =========================
    COUNTER ANIMATION
 ========================= */
 
@@ -374,5 +370,36 @@ if (
     themenNext.addEventListener("click", nextThema);
     themenPrev.addEventListener("click", prevThema);
 
-}
+/* =========================
+   TOUCH SWIPE
+========================= */
+
+let touchStartX = 0;
+let touchEndX = 0;
+
+themenSlider.addEventListener("touchstart", (e) => {
+
+    touchStartX = e.changedTouches[0].screenX;
+
+}, { passive: true });
+
+
+themenSlider.addEventListener("touchend", (e) => {
+
+    touchEndX = e.changedTouches[0].screenX;
+
+    const distance = touchEndX - touchStartX;
+
+    if (Math.abs(distance) < 50) {
+        return;
+    }
+
+    if (distance < 0) {
+        nextThema();
+    } else {
+        prevThema();
+    }
+
+    }
+
 }); 
