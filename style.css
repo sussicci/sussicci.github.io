@@ -1034,6 +1034,10 @@ footer {
     color: #94A3B8;
 }
 
+.footer-bottom p {
+    margin-left: 0.5rem;
+}
+
 /* =========================================
    (DATENSCHUTZ / IMPRESSUM)
 ========================================= */
