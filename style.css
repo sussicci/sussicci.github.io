@@ -1900,6 +1900,7 @@ footer {
 #hero--oekologie .hero-small-content h1,
 #hero--stadtplanung .hero-small-content h1 {
     margin-top: 0.8rem;
+    max-width: 750px;
 }
 
 /* =========================================
