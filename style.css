@@ -185,8 +185,8 @@ nav {
 
 .nav-dropdown .submenu {
     position: absolute;
-    top: calc(100% + 0.8rem);
-    left: 50%;
+    top: 100%;
+    left: 0;
     transform: translateX(-50%) translateY(-10px);
 
     min-width: 240px;
