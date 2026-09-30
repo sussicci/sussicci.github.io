@@ -633,7 +633,7 @@ nav {
 }
 
 .arbeit-intro {
-    width: min(760px, 90%);
+    width: min(760px, 100%);
     margin: 1.5rem auto 4rem auto;
     font-size: 1.15rem;
     line-height: 1.9;
