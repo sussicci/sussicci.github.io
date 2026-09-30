@@ -1,36 +1,68 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+    
     /* =========================
-    HAMBURGER MENU
+       HAMBURGER MENU
     ========================= */
 
     const hamburger = document.getElementById("hamburger");
     const mobileNav = document.getElementById("mobileNav");
     const navLinks = document.querySelectorAll(".nav1");
+    const navDropdown = document.querySelector(".nav-dropdown");
+    const navDropdownLink = navDropdown?.querySelector(".nav1");
 
     hamburger.addEventListener("click", () => {
 
-        hamburger.classList.toggle("active");
-        mobileNav.classList.toggle("active");
+    hamburger.classList.toggle("active");
+    mobileNav.classList.toggle("active");
 
     });
 
-    /* Menü schließen bei Klick */
+    /* Menü schließen bei Klick auf normalen Link */
 
     navLinks.forEach(link => {
 
-        link.addEventListener("click", () => {
+    link.addEventListener("click", () => {
 
-            hamburger.classList.remove("active");
-            mobileNav.classList.remove("active");
+        // Auf Desktop nichts Besonderes machen
+        if (window.innerWidth > 900) return;
+
+        // Wenn es der "Unsere Arbeit"-Link ist,
+        // soll zuerst das Untermenü geöffnet werden.
+        if (link === navDropdownLink) {
+            return;
+        }
+
+        hamburger.classList.remove("active");
+        mobileNav.classList.remove("active");
+
+    });
+
+    });
+
+    /* =========================
+       MOBILE AG UNTERMENÜ
+    ========================= */
+
+    if (navDropdown && navDropdownLink) {
+
+    navDropdownLink.addEventListener("click", (event) => {
+
+        if (window.innerWidth <= 900) {
+
+            event.preventDefault();
+
+            navDropdown.classList.toggle("open");
+
+        }
 
         });
 
-    });
+    }
     
     /* =========================
-   COUNTER ANIMATION
-========================= */
+    COUNTER ANIMATION
+    ========================= */
 
     const counter = document.getElementById("counter");
     const highlightSection = document.querySelector(".about-highlight");
