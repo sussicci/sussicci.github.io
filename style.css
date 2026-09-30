@@ -187,7 +187,7 @@ nav {
     position: absolute;
     top: 100%;
     left: 0;
-    transform: translateX(-50%) translateY(-10px);
+    transform: translateY(-10px);
 
     min-width: 240px;
     margin: 0;
