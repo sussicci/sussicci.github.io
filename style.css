@@ -1761,21 +1761,34 @@ footer {
 
 /* HERO */
 
-
-/*#hero--mobilitaet {
-    background: linear-gradient(rgba(15, 23, 42, 0.25), rgba(15, 23, 42, 0.55)), url("miltenberg.jpg");
-}*/
-
-#hero--mobilitaet {
-    background:
+#hero--stadtplanung {
+    background-image:
         linear-gradient(
             to right,
-            var(--mobilitaet) 0%,
-            rgba(22, 138, 173, 0.95) 25%,
-            rgba(22, 138, 173, 0.75) 50%,
-            rgba(22, 138, 173, 0.35) 75%,
-            transparent 100%),
+            var(--stadtplanung) 0%,
+            var(--stadtplanung) 1%,
+            transparent 1%
+        ),
         url("miltenberg.jpg");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#hero--soziales {
+    background-image:
+        linear-gradient(
+            to right,
+            var(--soziales) 0%,
+            var(--soziales) 1%,
+            transparent 1%
+        ),
+        url("miltenberg.jpg");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #hero--oekologie {
@@ -1783,47 +1796,23 @@ footer {
         linear-gradient(
             to right,
             var(--oekologie) 0%,
-            rgba(64, 145, 108, 0.95) 30%,
-            rgba(64, 145, 108, 0.8) 55%,
-            rgba(64, 145, 108, 0.45) 80%,
-            transparent 100%
+            var(--oekologie) 1%,
+            transparent 1%
         ),
         url("miltenberg.jpg");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-#hero--soziales {
-    background: 
-        linear-gradient(
-            to right,
-            var(--soziales) 0%,
-            rgba(214, 90, 111, 0.95) 30%,
-            rgba(214, 90, 111, 0.8) 55%,
-            rgba(214, 90, 111, 0.45) 80%,
-            transparent 100%
-        ),
-        url("miltenberg.jpg");
-}
-
-/*#hero--stadtplanung {
+#hero--mobilitaet {
     background-image:
         linear-gradient(
             to right,
-            var(--stadtplanung) 0%,
-            rgba(224, 122, 63, 0.95) 30%,
-            rgba(224, 122, 63, 0.8) 55%,
-            rgba(224, 122, 63, 0.45) 80%,
-            transparent 100%
-        ),
-        url("miltenberg.jpg");
-}*/
-
-#hero--stadtplanung {
-    background-image:
-        linear-gradient(
-            to right,
-            var(--stadtplanung) 0%,
-            var(--stadtplanung) 0%,
-            transparent 60%
+            var(--mobilitaet) 0%,
+            var(--mobilitaet) 1%,
+            transparent 1%
         ),
         url("miltenberg.jpg");
 
@@ -1837,12 +1826,14 @@ footer {
         linear-gradient(
             to right,
             var(--familie) 0%,
-            rgba(217, 164, 65, 0.95) 30%,
-            rgba(217, 164, 65, 0.8) 55%,
-            rgba(217, 164, 65, 0.45) 80%,
-            transparent 100%
+            var(--familie) 1%,
+            transparent 1%
         ),
         url("miltenberg.jpg");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #hero--berufundbildung {
@@ -1850,12 +1841,14 @@ footer {
         linear-gradient(
             to right,
             var(--berufundbildung) 0%,
-            rgba(69, 123, 157, 0.95) 30%,
-            rgba(69, 123, 157, 0.8) 55%,
-            rgba(69, 123, 157, 0.45) 80%,
-            transparent 100%
+            var(--berufundbildung) 1%,
+            transparent 1%
         ),
         url("miltenberg.jpg");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #hero--mobilitaet,
