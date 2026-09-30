@@ -1785,6 +1785,7 @@ footer {
 
 #hero--stadtplanung {
     background-image:
+        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
         linear-gradient(
             to right,
             var(--stadtplanung) 0%,
@@ -1800,6 +1801,7 @@ footer {
 
 #hero--soziales {
     background-image:
+        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
         linear-gradient(
             to right,
             var(--soziales) 0%,
@@ -1815,6 +1817,7 @@ footer {
 
 #hero--oekologie {
     background-image:
+        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
         linear-gradient(
             to right,
             var(--oekologie) 0%,
@@ -1830,6 +1833,7 @@ footer {
 
 #hero--mobilitaet {
     background-image:
+        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
         linear-gradient(
             to right,
             var(--mobilitaet) 0%,
@@ -1845,6 +1849,7 @@ footer {
 
 #hero--familie {
     background-image:
+        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
         linear-gradient(
             to right,
             var(--familie) 0%,
@@ -1860,6 +1865,7 @@ footer {
 
 #hero--berufundbildung {
     background-image:
+        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
         linear-gradient(
             to right,
             var(--berufundbildung) 0%,
