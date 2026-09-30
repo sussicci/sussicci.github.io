@@ -185,7 +185,7 @@ nav {
 
 .nav-dropdown .submenu {
     position: absolute;
-    top: 100%;
+    top: calc(100% + 10px);
     left: 0;
     transform: translateY(-10px);
 
@@ -209,23 +209,6 @@ nav {
         visibility 0.2s ease;
 
     z-index: 3000;
-}
-
-/* Kleiner Pfeil über dem Menü */
-
-.nav-dropdown .submenu::before {
-    content: "";
-    position: absolute;
-
-    top: -7px;
-    left: 50%;
-
-    width: 14px;
-    height: 14px;
-
-    background: var(--white);
-
-    transform: translateX(-50%) rotate(45deg);
 }
 
 /* Untermenü Links */
