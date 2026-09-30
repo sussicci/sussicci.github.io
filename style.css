@@ -1433,6 +1433,55 @@ footer {
         font-size: 1.8rem;
     }
 
+    /* DROPDOWN MENU ARBEIT */
+
+    .nav-dropdown .submenu {
+        position: static;
+
+        transform: none;
+
+        width: 100%;
+        min-width: 0;
+
+        padding: 0;
+        margin-top: 0.5rem;
+
+        background: transparent;
+        box-shadow: none;
+
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+
+        display: none;
+    }
+
+    /* Pfeil ausblenden */
+
+    .nav-dropdown .submenu::before {
+        display: none;
+    }
+
+    /* Untermenü öffnen */
+
+    .nav-dropdown.open .submenu {
+        display: block;
+    }
+
+    /* AG Links */
+
+    .nav-dropdown .submenu a {
+        padding: 0.7rem 1rem;
+
+        font-size: 0.95rem;
+
+        color: var(--text);
+    }
+
+    .nav-dropdown .submenu a:hover {
+        background: rgba(123, 44, 191, 0.08);
+    }
+
     /* HERO */
 
     #hero,
@@ -1505,11 +1554,6 @@ footer {
     }
 
     /* ARBEIT */
-
-    .filter-controls {
-        width: 90%;
-        justify-content: flex-start;
-    }
     
     #unsere-arbeit {
         padding: 4rem 0;
