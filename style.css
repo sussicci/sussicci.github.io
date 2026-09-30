@@ -1804,7 +1804,7 @@ footer {
         url("miltenberg.jpg");
 }
 
-#hero--stadtplanung {
+/*#hero--stadtplanung {
     background-image:
         linear-gradient(
             to right,
@@ -1815,6 +1815,21 @@ footer {
             transparent 100%
         ),
         url("miltenberg.jpg");
+}*/
+
+#hero--stadtplanung {
+    background-image:
+        linear-gradient(
+            to right,
+            var(--stadtplanung) 0%,
+            var(--stadtplanung) 42%,
+            transparent 42%
+        ),
+        url("miltenberg.jpg");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #hero--familie {
