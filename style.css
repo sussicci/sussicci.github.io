@@ -1822,8 +1822,8 @@ footer {
         linear-gradient(
             to right,
             var(--stadtplanung) 0%,
-            var(--stadtplanung) 25%,
-            transparent 25%
+            var(--stadtplanung) 0%,
+            transparent 60%
         ),
         url("miltenberg.jpg");
 
