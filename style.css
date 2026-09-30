@@ -636,10 +636,9 @@ nav {
     width: min(760px, 90%);
     margin: 1.5rem auto 4rem auto;
     font-size: 1.15rem;
-    line-height: 1.95;
+    line-height: 1.9;
     text-align: center;
     color: #334155;
-    font-weight: 500;
     position: relative;
 }
 
