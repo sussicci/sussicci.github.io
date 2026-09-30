@@ -225,6 +225,7 @@ nav {
     color: var(--text);
     font-size: 0.95rem;
     font-weight: 600;
+    text-transform: uppercase;
 
     white-space: nowrap;
 
