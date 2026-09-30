@@ -1784,25 +1784,6 @@ footer {
 /* HERO */
 
 #hero--stadtplanung {
-    position: relative;
-    background: url("miltenberg.jpg") center / cover no-repeat;
-}
-
-#hero--stadtplanung::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    width: 40%;
-    background: var(--stadtplanung);
-
-    clip-path: polygon(
-        0 0,
-        100% 50%,
-        0 100%
-    );
-}
-
-/*#hero--stadtplanung {
     background-image:
         linear-gradient(
             to right,
@@ -1815,7 +1796,7 @@ footer {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-}*/
+}
 
 #hero--soziales {
     background-image:
