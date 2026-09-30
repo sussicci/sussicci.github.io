@@ -265,7 +265,7 @@ nav {
     visibility: visible;
     pointer-events: auto;
 
-    transform: translateX(-50%) translateY(0);
+    transform: translateY(0);
 }
 
 /* =========================================
