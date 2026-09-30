@@ -1138,6 +1138,20 @@ footer {
     margin: 4rem auto;
 }
 
+.filter-controls {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 3rem;
+}
+
+.filter-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+}
+
 .filter-btn {
     font-family: 'Montserrat', sans-serif;
     background: transparent;
@@ -1709,7 +1723,15 @@ footer {
     /* ARBEIT */
 
     .filter-controls {
-        gap: 0.4rem;
+    width: 100%;
+    margin: 2rem 0 2.5rem;
+    }
+
+    .filter-top {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
     }
 
     .filter-controls label {
