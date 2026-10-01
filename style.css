@@ -2113,6 +2113,30 @@ footer {
     border-radius: 24px;
     overflow: hidden;
     box-shadow: 0 15px 40px rgba(15, 23, 42, 0.08);
+    align-items: stretch;
+}
+
+.ag-focus-image {
+    position: relative;
+    min-height: 0;
+}
+
+.ag-focus-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+/*.ag-focus-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--white);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(15, 23, 42, 0.08);
 }
 
 .ag-focus-image {
@@ -2124,7 +2148,7 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+}*/
 
 .ag-focus-image .status-badge {
     top: 1.5rem;
